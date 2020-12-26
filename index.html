@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avicus Archive</title>
+  <meta name="description" content="The Avicus archive is temporarily offline while we consider future updates." />
+  <meta property="og:title" content="Avicus Archive" />
+  <meta property="og:description" content="The Avicus archive is temporarily offline while we evaluate next steps." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#212121" />
+  <meta name="archive-years" content="2013-2017" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <style>
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow-x: hidden; }
+    body {
+      background: url('pattern.png') center center fixed;
+      background-size: 1500px 1500px;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      backdrop-filter: brightness(0.45) saturate(1.1);
+      box-sizing: border-box;
+      position: relative;
+    }
+    .overlay { background: rgba(18, 18, 18, 0.9); border-radius: 16px; padding: 40px; max-width: 820px; width: 95%; box-shadow: 0 8px 20px rgba(0,0,0,0.5); overflow: hidden; z-index: 1; }
+    h1 { font-weight: 700; margin-bottom: 10px; color: #ffffff; text-align: center; }
+    .chip { background-color: #d32f2f; color: #fff; font-weight: 600; display: inline-flex; align-items: center; justify-content: center; }
+    p, .collection .collection-item span, footer, .collection .collection-item { color: #f5f5f5 !important; }
+    .collection .collection-item { background-color: #263238 !important; border: none !important; }
+    a { color: #80cbc4; }
+    .discord-btn { background-color:#5865F2 !important; color:#fff !important; font-weight:700; letter-spacing:.2px; }
+    .stat { display:flex; align-items:center; gap:10px; padding:12px 16px; border-radius:12px; background:#1e272b; flex-wrap: wrap; }
+    .stat strong { font-size:1.15rem; color:#fff; }
+    .stat small { color:#cfd8dc; display:block; line-height:1.2; }
+    footer { margin-top: 20px; text-align: center; color: #e0e0e0; }
+    footer a { color: #80cbc4; }
+    .unofficial-badge { background-color:#ff9800; color:#000; font-weight:700; border-radius:8px; padding:4px 10px; margin-left:10px; font-size:.8rem; }
+    .floating-quote { position:absolute; width:260px; background:rgba(18,18,18,0.85); border:1px solid #3a4448; border-radius:12px; padding:10px 14px; box-shadow:0 6px 16px rgba(0,0,0,0.4); font-style:italic; color:#cfd8dc; text-align:center; }
+    .quote-header { font-weight:700; font-size:0.85rem; text-transform:uppercase; color:#80cbc4; margin-bottom:4px; letter-spacing:0.8px; }
+    #left-quote { left:8%; top:18%; }
+    #right-quote { right:8%; top:18%; }
+    .fade { animation: fadeSwap .6s ease; }
+    @keyframes fadeSwap { from{ opacity:.2; transform: translateY(4px);} to{ opacity:1; transform:none; } }
+    @media (max-width: 900px) {
+      #left-quote, #right-quote { display:none; }
+    }
+  </style>
+</head>
+<body>
+  <div id="left-quote" class="floating-quote">
+    <div class="quote-header">Avicus Quotes</div>
+    <i class="material-icons" style="font-size:1rem; vertical-align:middle; opacity:.6;">format_quote</i>
+    <span id="qLeft"></span>
+  </div>
+  <div id="right-quote" class="floating-quote">
+    <div class="quote-header">Avicus Quotes</div>
+    <i class="material-icons" style="font-size:1rem; vertical-align:middle; opacity:.6;">format_quote</i>
+    <span id="qRight"></span>
+  </div>
+
+  <div class="overlay z-depth-3">
+    <h1>Avicus Archive</h1>
+    <div class="center-align" style="margin-bottom:10px;">
+      <div class="chip"><i class="material-icons" style="margin-right:4px;">error_outline</i>Offline</div>
+    </div>
+    <p class="center-align">The Avicus archive is currently offline while we explore a refreshed way to present and preserve its legacy. Things may look a bit different when it returns, but the goal remains the same — to keep history accessible.</p>
+
+    <div class="center-align" style="margin-top:20px; display:flex; flex-wrap:wrap; justify-content:center; gap:10px;">
+      <a class="btn discord-btn" href="https://discord.gg/avicus" target="_blank" rel="noopener" style="white-space:nowrap;"><i class="material-icons left">chat</i> Join the Discord</a>
+    </div>
+
+    <div class="row" style="margin-top:20px; margin-left:0; margin-right:0;">
+      <div class="col s12 m6">
+        <ul class="collection z-depth-1">
+          <li class="collection-item valign-wrapper"><i class="material-icons" style="margin-right:8px;color:#80cbc4;">code</i>
+            <div><span class="title" style="font-weight:600;color:#ffffff;">Open source</span><br><span style="color:#f5f5f5;">Code & data remain available on GitHub</span></div>
+          </li>
+        </ul>
+      </div>
+      <div class="col s12 m6">
+        <ul class="collection z-depth-1">
+          <li class="collection-item valign-wrapper"><i class="material-icons" style="margin-right:8px;color:#80cbc4;">inventory_2</i>
+            <div><span class="title" style="font-weight:600;color:#ffffff;">Preservation</span><br><span style="color:#f5f5f5;">Legacy data and materials are archived</span></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:8px; margin-left:0; margin-right:0;">
+      <div class="col s12 m6">
+        <div class="stat"><i class="material-icons" aria-hidden="true">people</i>
+          <div><strong>579,226</strong><small>Users in the archive</small></div>
+        </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="stat"><i class="material-icons" aria-hidden="true">forum</i>
+          <div><strong>14,726</strong><small>Discussions • 287,145 replies</small></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-panel blue-grey darken-3 z-depth-1" style="margin-top:16px; color:#ffffff; position:relative;">
+      <div style="position:absolute; top:10px; right:10px;" class="unofficial-badge">Unofficial</div>
+      <div class="valign-wrapper" style="gap:10px; margin-bottom:6px;">
+        <i class="material-icons" aria-hidden="true">sports_esports</i>
+        <strong style="font-size:1.1rem;">Interested in playing classic Avicus-style modes?</strong>
+      </div>
+      <p style="margin:0 0 8px 0; color:#eceff1;">A community-run project called <strong>Project Nebula</strong> is hosting familiar gamemodes & maps inspired by the old network.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:10px;">
+        <a class="btn" href="https://www.mcnebula.net/" target="_blank" rel="noopener"><i class="material-icons left">public</i> Visit Project Nebula</a>
+        <a class="btn" href="https://discord.com/invite/kgWvJGKkt8" target="_blank" rel="noopener"><i class="material-icons left">chat_bubble_outline</i> Nebula Discord</a>
+      </div>
+    </div>
+
+    <div class="card-panel grey darken-4 z-depth-1" style="margin-top:16px;text-align:center;color:#ffffff;">
+      Public data available at <a href="https://github.com/Avicus/data" target="_blank" rel="noopener">github.com/Avicus/data</a>
+      <div style="margin-top:6px;color:#cfd8dc;font-size:0.9rem;">Snapshot as of Feb 20, 2021, 5:02 PM CST</div>
+    </div>
+
+    <div class="card-panel grey darken-3 z-depth-1" style="margin-top:12px;color:#ffffff;">
+      <div class="valign-wrapper" style="gap:10px; margin-bottom:6px;">
+        <i class="material-icons" aria-hidden="true">shield</i>
+        <strong style="font-size:1.05rem;">Privacy & Data Removal</strong>
+      </div>
+      <p style="margin:0 0 6px 0; color:#eceff1;">The archive only mirrors <em>previously public</em> content. We do not store or release private data.</p>
+      <p style="margin:0; color:#eceff1;">To request removal of specific public items, email <a href="mailto:austin@avicus.net">austin@avicus.net</a> and include links or enough details to locate the content.</p>
+    </div>
+
+    <footer>
+      © <span id="years"></span> Avicus Network • <a href="https://github.com/Avicus" target="_blank" rel="noopener">GitHub</a> • <a href="https://discord.gg/avicus" target="_blank" rel="noopener">Discord</a>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    (function(){
+      var meta = document.querySelector('meta[name="archive-years"]');
+      var years = meta ? meta.getAttribute('content') : '';
+      document.getElementById('years').textContent = years || '';
+
+      const QUOTES = [
+        "The block lag will be fixed in the next update.", "Tiler wakes up.",
+        "You have completed your interview and you have been accepted by the senior staff and will be promoted to Junior Moderator.",
+        "Your application has been accepted for an interview.",
+        "Your application has been reviewed and is good by the Senior Staff’s standards.",
+        "You may NOT submit another application.",
+        "I am sorry to say your application has been DENIED.", "Please use /report!",
+        "TS Dev is a good idea, right?", "Now supporting 1.7 PVP!", "We've dropped support for 1.7",
+        "The Atlas update is coming!", "Credits just became more useful!", "MVP is now in BETA",
+        "The senior staff will be hosting weekly megascrims!",
+        "Avicus: Building and destroying relationships since 2011!",
+        "Hey Sunrise you there? So yeah you basically got mod.", "Avicore is coming in 17 years",
+        "kycrafft", "I'm not annoying I'm Mench",
+        "Snow, I'm going to have to officially warn you. You have disrespected our supreme lord, Posighdun.",
+        "\"Where are these memes created or forged\" - funkystudios",
+        "Wait, how long is a permanent ban?", "ProfessorUtonium has destroyed cave.",
+        "\"September is an amazing year\" -Zeus", "Yikes.", "I'm single pringled and ready to mingle",
+        "See you in game!", "Sho in staff chat: \"HEY LOOK AT ME MOM IM A MINECWAFT POWICEMAN\"",
+        "\"Pie has facial hair I like\" - Greg", "\"Go home gamer girl\" -Smit",
+        "Greg: \"Tonight's the night that we should probably end it all\"",
+        "<18:38:13> \"[Zeusy] Zeusy\" pokes you: Can i touch your Avicore?",
+        "<18:33:24> \"[Sli] Fouled\" pokes you: You must be a pressure plate, because you turn me on.",
+        "<02:13:42> \"Flo [resepignev]\" pokes you: you make my sticky piston extend",
+        "<18:41:43> You poked \"[Zeus] Zeusy\" with message: my viper is venemous",
+        "Poland, i thought that was a city. - Maddy", "\"Kylo you suck\" -Austin 2k16",
+        "\"My mic is literally in my mouth right now.\" -Steven5703",
+        "\"I'm a better woman than you are.\" -ALM/Compendium", "\"THIS BLOCK IS HACKING\"",
+        "Harvey: \"Everyone's makeup in my school looks like shrek's eyeliner\"",
+        "\"Howsie is activer than you\" - Eric", "Spookz: *beats head on desk*",
+        "\"Greg and Cole are dating -Lindstagram",
+        "\"You used to poke me on my TeamSpeak, late night when you need my memes. -ALMondCode",
+        "\"I had a baby with an avocado\"--Cyanide",
+        "\"We shouldn't demote him, I like his skin\" - Iron2k16",
+        "\"I told my teacher my dog ate my homework, I told Tazz my dog ate my laptop while screensharing\"~Blaze2k16",
+        "\"Stockholm, that's somewhere in England, right?\" - Raging",
+        "\"You dirty, dirty cheater! I won because of you!\" -Solstice",
+        "\"You're putting the orange wool in the yellow slot\" -kycrafft",
+        "\"To tired to sleep, any advice?\" - Apollo", "\"I am two gender\" - ImNotYourTiger",
+        "\"The quality of our moderators has dropped significantly\" - Midnight",
+        "\"YOU SALAD SAUCE, OMG THAT WAS OFF THE BEANS ON TOASSTT\" -Nemo",
+        "\"Elsa, do you have a nice butt?\" -FrostedCupcakez",
+        "'If I make an appeal, what am I meant to put? I was not using anti kb, with love and hugs, flowers in the post soon, from Raging <3. That's as fishy as fishy fish come.' -Raging.",
+        "\"I can hear that autoclicker in the background??\" -sli",
+        "\"BARNEY GET OFF MY KEYBOARD\" -raging", "\"that's r e l y  h o t\" -Eric",
+        "\"Don't be kinky. Not now. Don't be kinky\" - Jess",
+        "\"How do I post a photo? I wanna show people how hot I really am.\" - Mary",
+        "\"im gonna make my secret hard to fine\" -TeamCarry",
+        "\"Nah I’m just an ugly half chinese loner that sits and plays minecraft 24/7\" - Evan / Biixerv",
+        "\"the avicus fire department is gonna be pissed when they see this\" - Para",
+        "Eako: \"Peachy and Mango retired to become juice flavours.\"",
+        "\"I stole someone elses skin and put my logo on it.\" -Tynvale",
+        "\"Please don't flood the cat\" - ImRaging 2015",
+        "*humping monkey Skype emoji* - everyone in Monkey Mafia Skype chat",
+        "\"Hey, I found Chatbot in the maze!\" - Petlas",
+        "\"i always thought the connection bars told you how close the players are in game\" -MidnightStorm",
+        "\"rile i can destroy you in verbal pvp\" -jozz", "\"How do you even spell my name?\" -Rilo",
+        "\"Steven, Stop jitter clicking on your soup!\" - Eric", "Seth: \"I am a mapdev.\"",
+        "'Brighton, famous for pebbles and gay people ;)' -Pizza", "\"Chicken Nugged\" - ParaSpider",
+        "\"Callie, how many children do you have?\" - Zeus", "\"Is an armadillo an animal?\" -Remy",
+        "\"Dilpickel can you rollback the server, I was checking instagram\"",
+        "\"This is gonna be bad for my stomach, and even worse for the bathroom\" - greg",
+        "\"Be ice\" -dil", "\"I kind of just forgot Tasmania existed.\" - Tynvale",
+        "[2015-08-25, 3:12:19 PM] Case (Ques): jesss r u gril gamer??1?1?!1?1?2!2??!1?2?",
+        "\"Wait, I didn't realise, March is before May\" -Pizza",
+        "Eric: \"GO BUY A NEW BRAIN ON EBAY BECAUSE I WANT YOU TO CARE!\"",
+        "\"CTH = AutoClicker Simulator\" -kycrafft", "\"AND IM NOT EVEN A RAPER\" -Sevoh",
+        "\"Have a good slep\" -AlarmClock", "\"REMOVE IT AND DIE\" -GalaxyBrit",
+        "\"Oh no, Spookeh rushing with no armour again! Defend!\" - Zeus2k14",
+        "\"My dad said if I ever do that, he would be waiting outside with a shotgun when I got home. Its very southern.\" -Refuse",
+        "\"is sweden in canada?\" - MaddyLomer", "Greg: \"SHUT THAT WHITE BITCH UP!\"",
+        "'You come to Avicus TS to get trolled, you get trolled right back' -Merlin",
+        "\"Normal people take their dogs out for a walk. Australians take their Kangaroos out for a hop\" -SnowSX3",
+        "\"Do Australians drink kangaroo milk?\" - Zeusy",
+        "\"WHAT!?! BRITNEY IS FILIPINO?\" -Cyanide",
+        "\"roses are pvp, voilets are not pvp, I dont like pvper, are we pvping or are we dancer\" - ParaSpider",
+        "\"URGH I HATE YOU, I HOPE YOU STEP ON A LEGO\" -GrapeSmoothie",
+        "\"You need to be that active but you don't need to be that active\" -Iron",
+        "\"Yellow car\" -resepignev", "\"SHUT UP BLIZZEM!!!!\" -Iron",
+        "\"I love bias jokes because they're so true.\" - Aerosmith", "\"Rub my kneecaps\" -Upsoar",
+        "\"yes steven, in that hole\" -refuse", "\"VenomousViper is a mouse!\" -TheMasterClock",
+        "Para: \"DEE DEE! WHAT ARE YOU DOING IN MY LAB! CAN'T YOU SEE I'M WORKING ON YML! YOU FUCKED THE REGIONS UP! DEE DEE\"",
+        "\"Hey look I can drive a refrigerator\" ... \"NO! THE REFRIGERATOR! We had so much in common!\" - Para",
+        "\"i always say hi because my mommy says it's polite to do so\" -timaeustestified",
+        "'MOOOOOOOOM, CAN I HAVE A BANANA?!?!?'- Steven",
+        "\"I have a poster in my room that says everyone on Berzerk is flat but me\" - Dankye_",
+        "\"I just Breezlyed two blocks, I'm a God\" - Eric",
+        "\"Hearing that booger scream in agony is not allowed\" - Sircyanide",
+        "\"Snow balls = no balls\" ~ RefuseToSink",
+        "\"Annamarie go take a damn shower\" -FrostedCupcakez",
+        "\"Like, whenever I enter a game, everyone's like, \"OMG HAI REFOOSE!\" -RefuseToSink",
+        "\"bruh ur like 12\" - KarlKorv",
+        "\"I need some weesources to give to Michael Jackshon.\"- FrozenSolstice",
+        "\"How many hours are in 120 hours\" ~ Iron",
+        "Iron: I just banned myself and i had to give an appeal. Porky Denied it",
+        "\"We're the Tunnel Snakes, that's us\" -Newcleus",
+        "\"Please steven, don't quote it, I'm begging you!\" - Sircyanide",
+        "[12:29:29 PM] Hacktivism: Now Ivycode could probably 8-block me",
+        "\"I watched 5 hours of motivational lizard and passed my finals. Coincidence? I think not.\" - Steven",
+        "\"No Copyright for Nyan Cat!! Respect.\" - RefuseToSink",
+        "\"You shouldn't circle strafe someone, without their permission\" -Pizza",
+        "my dentist told me tell the tooth and nothing but the tooth - awesome_apricot",
+        "\"Ooga Booga go back to meepcraft\" - kycrafft",
+        "\"I got punched by a Kangaroo once.\" - Sesspee",
+        "[5:54:31 PM] steven5703 ツ (avicus mapdev): APPARENTLY //FLIP SOUTH MEANS FLIP UPSIDE DOWN",
+        "\"Life is a journey\" - AtlasRaven (TheOpAsian)",
+        "\"oh the staff team r good they host tournament!!!\" - DaGoldBrick",
+        "\"Ouch My Armpit\"- Refuse", "\"i'm calling this the\"para is flat shack\"\" ~Darkye_",
+        "\"wtf, when I synced changes on github my printer went off\" - steven",
+        "\"razzledazzled\" -RazzleDazzled",
+        "\"Demote him, actually, send him to a help room, he needs Jesus\"- Tanpopo",
+        "Mapdev- \"I'm a creep... love me.\"", "*Really annoying air horn noise* - Steven5703",
+        "\"Welcome to the Avicus Podcast\"", "Can't wait to get bowspermed off my bridge - grosssner",
+        "\"im like a rubix cube. the more you play with me the harder i get\" - Pokey on Refuse",
+        "MLGPorky: wanna hear something funny ... MidnightBeats: your future",
+        "\"Wait, Petlas is a girl?\" - 30% of Avicus.",
+        "'Grow some balls, and give them to Steven' - SirCyanide",
+        "\"Ooo, Ambi's singing, guess who's gone.\" - Sesspee", "\"What the Lmao\" -MLGtino",
+        "\" Heat I think you're the only one who doesn't check girls out on facebook \" -JK",
+        "Britney: \"Let's just say my face was covered in dried baking soda and water\"",
+        "Doctapop/Tyler \"I guess you could say Rile is Riled up xD!!!!!!\"", "\"same\" - TNTPotato",
+        "\"Annnnnd Steven goes crazy\" -Shiro", "Sesspee: I will use /report if you use /ban xD",
+        "\"That's the power of North Korea\" -Tanpiku", "\"Toldeo\" - Kylo",
+        "\"Gary picked me up with his powerful penguin claws\" - ImRaging",
+        "\"1v1 me on badlion\" -Legoche", "\"I feel like Shakira\" - Peacheh",
+        "\"99 stop getting kills with my name\" - Peacheh", "Sli: \"PLS I almost spit my milk out\"",
+        "yo looks ain' gon' getchu pay-eeeeed.cuz you're not that cute. and your hair's uneven. ya look dusteh. and ya stank too. -Ashawana",
+        "Clock: \"Shush slack it\"", "\"Jr. Mod has more power, Sr. Mod is trial\" -Para",
+        "\"Mapdev is like owner\" -Para",
+        "\"The only way you can win Venemous TDM is if you kill kycrafft\" -VenomousViper",
+        "\"Whats a California\" - TheMasterClock",
+        "*In super high voice with voice changer* \"RAWR\" -Cal",
+        "\"Gary is love, Gary is lyfe\" -ImRaging",
+        "FrostedCupcakez: 5..4..3,2,1 WE'RE GOING ON A TRIP ON OUR FAVOURITE ROCKET SHIP ZOOMING THROUGH THE SKY. LITTLE EINSTEINS",
+        "\"I think I'm high on chocolate.\" - FrozenSolstice", "I CAME IN LIKE A TANK!!! - rilomilo9",
+        "\"You see this? This right here. It's a dot, a wonder of nature [insert blown up picture of a dot] Astonishing, wonderful, amazing.\"- FrozenSolstice"
+      ];
+
+      const left = document.getElementById('qLeft');
+      const right = document.getElementById('qRight');
+      const boxL = left && left.parentElement;
+      const boxR = right && right.parentElement;
+
+      function pickTwo(){
+        if(QUOTES.length < 2) return ["",""];
+        let i = Math.floor(Math.random()*QUOTES.length);
+        let j; do { j = Math.floor(Math.random()*QUOTES.length);} while (j===i);
+        return [QUOTES[i], QUOTES[j]];
+      }
+
+      function setQuotes(){
+        const [a,b] = pickTwo();
+        if(left && right){
+          left.textContent = a;
+          right.textContent = b;
+          if(boxL&&boxR){
+            boxL.classList.add('fade');
+            boxR.classList.add('fade');
+            setTimeout(()=>{ boxL.classList.remove('fade'); boxR.classList.remove('fade'); }, 700);
+          }
+        }
+      }
+
+      setQuotes();
+      setInterval(setQuotes, 30000);
+    })();
+  </script>
+</body>
+</html>
