@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<!-- Required meta tags -->
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+<!-- Metro 4 -->
+<link href='https://cdn.metroui.org.ua/v4.4.2/css/metro-all.min.css' rel='stylesheet'>
+<link href='/favicon.ico' rel='shortcut icon'>
+<title>[TUT] Using HTML in your Profile. - Avicus Network</title>
+<meta content='[TUT] Using HTML in your Profile. - Avicus Network' property='og:title'>
+<meta content='website' property='og:type'>
+<style>
+  body {
+    background-color: #e1eded;
+  }
+  
+  hr {
+    background-color: #abc2c2;
+  }
+</style>
+</head>
+<body class='m4-cloak' style='padding-top: 52px'>
+<heder data-expand-point='md' data-role='appbar'>
+<a class='brand no-hover' href='#'>
+<span class='text-center' style='width: 140px; font-size: 140%'>
+Avicus Archive
+</span>
+</a>
+<ul class='app-bar-menu'>
+<li>
+<a href='/index.html'>Home</a>
+</li>
+<li>
+<a href='/forums.html'>Forums</a>
+</li>
+</ul>
+</heder>
+<div class='container-fluid mt-5'>
+<div class='container'>
+<h1>
+[TUT] Using HTML in your Profile.
+by
+<a href='/users/Posighdun.html' style='color: Gray'>Posighdun</a>
+<small>May 23, 2015 at  7:05 AM UTC</small>
+</h1>
+ <br> 
+<hr>
+<center><h1>Awesome Profile Guide <small>By Sesspee</small></h1></center>
+<hr>
+<center><h2>Introduction</h2></center>
+<center><p>So i decided a while ago i would make a guide that teaches people how to make an epic profile. I cannot simply put every single html trick in here all at once, every day from now this tutorial will be updated with new tricks and tips. Please note you can use these tricks in your forum posts and thread structures to, they aren't just for your profile. 
+
+</p><center><h1>Bootstrap</h1></center>
+What is bootstrap? Bootstrap is basically a framework for websites to use rather then to just be plain and boring. Since the release of bootstrap 3, bootstrap became responsive. What does this mean? Well it pretty much means you can view the website on any type of device. Its much more in depth then that but if you are interested you can read about it at <a href="http://en.wikipedia.org/wiki/Responsive_web_design" title="Link: http://en.wikipedia.org/wiki/Responsive_web_design">http://en.wikipedia.org/wiki/Responsive_web_design</a>. If you want to know more about bootstrap visit their site, <a href="http://getbootstrap.com/">http://getbootstrap.com/</a>. 
+</center><p></p>
+
+<center><small>Please note it is expected that you have a little bit of an idea on HTML if this tutorial is to make any sense to you.</small></center>
+
+<center><h1>Buttons</h1></center>
+<center><p>We will start off with buttons because they are one of the best features of bootstrap, in my opinion. 
+</p><center><a class="btn">Your Average Button</a></center>
+<br>
+<code>&lt;a class="btn"&gt;Title&lt;/a&gt;</code>
+<br>
+<center><p>Your normal button can be manipulated to make some cool looking buttons that can do a range of things. By manipulating the class and adding attributes we can make the normal button look a bit better.</p></center>
+<br>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Button</th>
+<th>Addable Attributes</th>
+<th>Description</th>
+<th>Class=""</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="btn">Default</a></td>
+<td><code>Zilch</code></td>
+<td>Standard boring Buttont</td>
+<td>btn</td>
+</tr>
+<tr>
+<td><a class="btn" href="https://avicus.net/">URL</a></td>
+<td><code>href="Insert URL"</code></td>
+<td>Allows a link to be in a button and when clicked will take the user to the designated link.</td>
+<td>btn</td>
+</tr>
+<tr>
+<td><a class="btn active">Active</a></td>
+<td><code>Zilch</code></td>
+<td>Allows a link to be in a button and when clicked will take the user to the designated link.</td>
+<td>btn active</td>
+</tr>
+<tr>
+<td> <a class="btn">Button 1</a> 
+<a class="btn">Button 2</a> </td>
+<td><code>Zilch</code></td>
+<td>Allows two buttons to be joined together in a group.</td>
+<td>btn-group</td>
+</tr>
+<tr>
+<td><a class="btn btn-large">Large</a></td>
+<td><code>Zilch</code></td>
+<td>Makes the button large.</td>
+<td>btn-large</td>
+</tr>
+<tr>
+<td><a class="btn btn-small">Small</a></td>
+<td><code>Zilch</code></td>
+<td>Makes the button small.</td>
+<td>btn-small</td>
+</tr>
+<tr>
+<td><a class="btn btn-block">Block</a></td>
+<td><code>Zilch</code></td>
+<td>Makes the button a long block.</td>
+<td>btn-block</td>
+</tr>
+<tr>
+<td><a class="btn">Disabled</a></td>
+<td><code>disabled="disabled"</code></td>
+<td>Makes the button disabled, you cannot interact with it.</td>
+<td>btn</td>
+</tr>
+</tbody>
+</table>
+<center><p>Buttons can also have "theme's" or styled classes to make the button more colourful.</p></center>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Button</th>
+<th>class=""</th>
+<th>Colour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="btn">Default</a></td>
+<td><code>btn</code></td>
+<td>Gray</td>
+</tr>
+<tr>
+<td><a class="btn btn-primary">Primary</a></td>
+<td><code>btn btn-primary</code></td>
+<td>Blue</td>
+</tr>
+<tr>
+<td><a class="btn btn-info">Info</a></td>
+<td><code>btn btn-info</code></td>
+<td>Light Blue</td>
+</tr>
+<tr>
+<td><a class="btn btn-success">Success</a></td>
+<td><code>btn btn-success</code></td>
+<td>Green</td>
+</tr>
+<tr>
+<td><a class="btn btn-warning">Warning</a></td>
+<td><code>btn btn-warning</code></td>
+<td>Orange/Yellow</td>
+</tr>
+<tr>
+<td><a class="btn btn-danger">Danger</a></td>
+<td><code>btn btn-danger</code></td>
+<td>Red</td>
+</tr>
+<tr>
+<td><a class="btn btn-inverse" title="Link: null">Inverse</a></td>
+<td><code>btn btn-inverse</code></td>
+<td>Black</td>
+</tr>
+</tbody>
+</table>
+<center><p><b> As i mentioned above in the introduction, i will keep adding more stuff to the guide as its just to much to cover if i do it all at once. I will be frequently updating the guide and i am open to suggestions. Next up i will cover&nbsp;how to use Icons and how to incorporate columns so that everything is aligned. </b></p></center><p></p></center>
+<center><small>Please also note that sometimes elements may not work in the forums but work when you apply them to your profile.</small></center>
+<center><h1>Icons</h1></center>
+<center><p> For Icons Avicus uses Font Awesome. http://fortawesome.github.io/Font-Awesome/3.2.1/. Icons can be incorporated in both your profile and in your posts. You can manipulate their size, incorporate them into other elements such as buttons and you can do a lot more.</p></center><p></p> <br><center><p> For a full list of all icons go to, http://fortawesome.github.io/Font-Awesome/3.2.1/icons/.</p></center><p></p>
+<center><i class="icon-comment-alt"></i><br> This is the most basic icon. <br>
+<br><code>&lt;i class="icon-comment-alt"&gt;&lt;/i&gt;</code></center>
+<br>
+<center><h2>Size Manipulation</h2></center>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Icon</th>
+<th>class=""</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><i class="icon-comment-alt icon-large"></i></td>
+<td><code>icon-large</code></td>
+<td>Largest</td>
+</tr>
+<tr>
+<td><i class="icon-comment-alt icon-2x"></i></td>
+<td><code>icon-2x</code></td>
+<td>Twice the size.</td>
+</tr>
+<tr>
+<td><i class="icon-comment-alt icon-3x"></i></td>
+<td><code>icon-3x</code></td>
+<td>Three times the size.</td>
+</tr>
+<tr>
+<td><i class="icon-comment-alt icon-4x"></i></td>
+<td><code>icon-4x</code></td>
+<td>Four times the size.</td>
+</tr>
+</tbody>
+</table>
+
+<center><h2>Angle Manipulation</h2></center>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Icon</th>
+<th>class=""</th>
+<th>Angle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><i class="icon-hand-right icon-rotate-90"></i></td>
+<td><code>icon-rotate-90</code></td>
+<td>90 Degrees</td>
+</tr>
+<tr>
+<td><i class="icon-hand-right icon-rotate-180"></i></td>
+<td><code>icon-rotate-180</code></td>
+<td>180 Degrees</td>
+</tr>
+<tr>
+<td><i class="icon-hand-right icon-rotate-270"></i></td>
+<td><code>icon-rotate-270</code></td>
+<td>270 Degrees</td>
+</tr>
+<tr>
+<td><i class="icon-hand-right icon-flip-horizontal"></i></td>
+<td><code>icon-flip-horizontal</code></td>
+<td>Horizontal</td>
+</tr>
+<tr>
+<td><i class="icon-hand-right icon-flip-vertical"></i></td>
+<td><code>icon-flip-vertical</code></td>
+<td>Vertical</td>
+</tr>
+</tbody>
+</table>
+<br>
+<center><h1>Labels</h1></center>
+<center><p>Labels can be used in your profile and do look quite nice. I personally have no clue how i  would use them but each is to their own. 
+</p><center><span class="label label-default">Label</span><br> This is the most basic Label. <br>
+<br><code>&lt;<span class="label label-default"></span></code></center></center>
+<br><center><h2>Themed Labels</h2></center>
+<table class="table table-bordered table-striped">
+<thead>
+<tr>
+<th>Label</th>
+<th>class=""</th>
+<th>Colour</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="label label-primary">Primary Label</span></td>
+<td><code>class="label label-primary"</code></td>
+<td>Primary/Blue</td>
+</tr>
+<tr>
+<td><span class="label label-success">Success Label</span></td>
+<td><code>class="label label-success"</code></td>
+<td>Success/Green</td>
+</tr>
+<tr>
+<td><span class="label label-info">Info Label</span></td>
+<td><code>class="label label-info"</code></td>
+<td>Info/Light Blue</td>
+</tr>
+<tr>
+<td><span class="label label-warning">Warning Label</span></td>
+<td><code>class="label label-warning"</code></td>
+<td>Warning/Orange</td>
+</tr>
+<tr>
+<td><span class="label label-danger">Danger Label</span></td>
+<td><code>class="label label-danger"</code></td>
+<td>Danger/Red</td>
+</tr>
+</tbody>
+</table>
+<br>
+<p> If you want to have a label with any colours other than the ones above then just insert a style tag right next to the class tag like so,</p> <br><center><code>style="background-color: #COLOURCODE;"</code></center>.
+<br><center><p>For a reliable list of html colours go to http://www.w3schools.com/html/html_colors.asp .</p></center>
+<center><span class="label label" style="background-color: #990066;">Personal Colour Label</span></center>
+<hr>
+<h2>
+<a href='/users/faht.html' style='color: Gray'>faht</a>
+<small>
+May 23, 2015 at  7:05 AM UTC
+</small>
+</h2>
+Awesome guide ;))
+<hr>
+<h2>
+<a href='/users/Posighdun.html' style='color: Gray'>Posighdun</a>
+<small>
+May 23, 2015 at  7:05 AM UTC
+</small>
+</h2>
+Update*<br>- Added basics to icons.
+<hr>
+<h2>
+<a href='/users/resepignev.html' style='color: Gray'>resepignev</a>
+<small>
+May 23, 2015 at  7:05 AM UTC
+</small>
+</h2>
+Really goood guide!!<br>Thanks!
+<hr>
+<h2>
+<a href='/users/Eteh.html' style='color: none'>Eteh</a>
+<small>
+May 23, 2015 at  8:05 AM UTC
+</small>
+</h2>
+Thanks for the guide! Might try this out! Hope it gets stickied :D
+<hr>
+<h2>
+<a href='/users/Fuseh.html' style='color: none'>Fuseh</a>
+<small>
+May 23, 2015 at  8:05 AM UTC
+</small>
+</h2>
+Good job! By the way nice name. :p
+<hr>
+<h2>
+<a href='/users/RightSide.html' style='color: none'>RightSide</a>
+<small>
+May 23, 2015 at  8:05 AM UTC
+</small>
+</h2>
+Ok cool guide.
+<hr>
+<h2>
+<a href='/users/Atdit.html' style='color: none'>Atdit</a>
+<small>
+May 23, 2015 at  9:05 AM UTC
+</small>
+</h2>
+Nice work, just one problem, you have to insert an url like&nbsp;<a href="https://avicus.net/" title="Link: https://avicus.net">https://avicus.net</a>, not only&nbsp;<b>Avicus.net</b>. Because it will think, it's an folder on the webserver "<a href="https://avicus.net/forums/Avicus.net" title="Link: https://avicus.net/forums/Avicus.net">https://avicus.net/forums/<b>Avicus.net</b></a>"
+<hr>
+<h2>
+<a href='/users/Posighdun.html' style='color: Gray'>Posighdun</a>
+<small>
+May 23, 2015 at  1:05 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_192860-1516'>
+Replied to
+Atdit
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_192860-1516'>
+Nice work, just one problem, you have to insert an url like&nbsp;<a href="https://avicus.net/" title="Link: https://avicus.net">https://avicus.net</a>, not only&nbsp;<b>Avicus.net</b>. Because it will think, it's an folder on the webserver "<a href="https://avicus.net/forums/Avicus.net" title="Link: https://avicus.net/forums/Avicus.net">https://avicus.net/forums/<b>Avicus.net</b></a>"
+</blockquote>
+</div>
+Thanks, i totally forgot about that xD
+<hr>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<div class='bottom-nav fixed-bottom p-4' style='background-color: #a1d6d6'>
+<ul class='inline-list reduce-1 m-0'>
+<li>
+This website is an archive of data gathererd by Avicus Network LLC between the years of 2013 and 2017
+<br>
+Copyright Ⓒ 2012-2017 Avicus Network LLC. All Rights Reserved
+<br>
+</li>
+<li>
+<a class='no-decor fg-white fg-white-hover' href='https://discord.gg/4VR84ce'>Discord</a>
+</li>
+<li>
+<a class='no-decor fg-white fg-white-hover' href='https://github.com/Avicus/'>GitHub</a>
+</li>
+<li>
+<a class='no-decor fg-white fg-white-hover' href='https://xml.avicus.net'>XML Documentation</a>
+</li>
+</ul>
+</div>
+<!-- Metro 4 -->
+<script src='https://cdn.metroui.org.ua/v4.4.2/js/metro.min.js'></script>
+</body>
+</html>

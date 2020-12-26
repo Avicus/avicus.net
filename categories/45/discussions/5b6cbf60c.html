@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<!-- Required meta tags -->
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+<!-- Metro 4 -->
+<link href='https://cdn.metroui.org.ua/v4.4.2/css/metro-all.min.css' rel='stylesheet'>
+<link href='/favicon.ico' rel='shortcut icon'>
+<title>YMLs Explained and how to write them simply! - Avicus Network</title>
+<meta content='YMLs Explained and how to write them simply! - Avicus Network' property='og:title'>
+<meta content='website' property='og:type'>
+<style>
+  body {
+    background-color: #e1eded;
+  }
+  
+  hr {
+    background-color: #abc2c2;
+  }
+</style>
+</head>
+<body class='m4-cloak' style='padding-top: 52px'>
+<heder data-expand-point='md' data-role='appbar'>
+<a class='brand no-hover' href='#'>
+<span class='text-center' style='width: 140px; font-size: 140%'>
+Avicus Archive
+</span>
+</a>
+<ul class='app-bar-menu'>
+<li>
+<a href='/index.html'>Home</a>
+</li>
+<li>
+<a href='/forums.html'>Forums</a>
+</li>
+</ul>
+</heder>
+<div class='container-fluid mt-5'>
+<div class='container'>
+<h1>
+YMLs Explained and how to write them simply!
+by
+<a href='/users/RightSide.html' style='color: none'>RightSide</a>
+<small>May 16, 2015 at  3:05 PM UTC</small>
+</h1>
+   <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style=" background-image: initial; background-attachment: initial; background-size: initial;   background-position: initial; background-repeat: initial;">Well months ago I didn't know how to write YMLs and I wanted to learn
+and I self taught myself here's how I did it. You may be asking why did you do
+this but why I did this is to mainly get a YML and explain what it is or how to
+do it! Yes its alot of writing but it's really easy to read and then you can
+learn to look at other YMLs look&nbsp;</span><span><a href="http://maps.avicus.net/Nebula/DTM/" title="Link: http://maps.avicus.net/Nebula/DTM/"><span style="color:blue">here</span></a></span><span style=" background-image: initial; background-attachment: initial; background-size: initial;   background-position: initial; background-repeat: initial;">&nbsp;not
+everyone makes them in the same order or use different ways I tried to use the
+most simplest . I recormend using the following program to write the YMLs its
+called&nbsp;</span><span><a href="http://www.sublimetext.com/2"><span style="color:blue">Sublime Text 2 click here to
+download!</span></a></span><span style=" background-image: initial; background-attachment: initial; background-size: initial;   background-position: initial; background-repeat: initial;">&nbsp;Make sure you read most of the text to fully
+understand or know what to do. This taken a while to make I just had some spare
+time so I make this and to help those you don't know how to make them!</span><span><br>
+<br>
+<span style="background-image: initial; background-attachment: initial; background-size: initial;   background-position: initial; background-repeat: initial;">This is mainly for DTM. (Make sure they are all
+in-line or as follows to check if they work or lined up correctly goto a&nbsp;</span></span><span><a href="http://yaml-online-parser.appspot.com/" title="Link: http://yaml-online-parser.appspot.com/"><span style="color:blue">YML Parser</span></a></span><span style=" background-image: initial; background-attachment: initial; background-size: initial;   background-position: initial; background-repeat: initial;">&nbsp;to
+check). To help me alot you can copy a previous YML and change/remove/add more
+code saves lots of time and you won't forget anything!</span><span><br>
+<span style="background-image: initial; background-attachment: initial; background-size: initial;   background-position: initial; background-repeat: initial;">Examples here have been used from mixed YMLS.</span></span></p><p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span>===================================================================================<br>
+<b>1. First start off with a section looking like this:&nbsp;</b><br>
+<br>
+</span><span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">info:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; title: 'NAME OF MAP'</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; world: '</span><span style="
+
+color:black;">NAME OF MAP'</span><span style="color:black;"><br>
+&nbsp; version: 1.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Version your map is).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; type: dtm&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Gamemode like TDM CTW etc
+Please note for different gamemodes YMLs change).&nbsp; creators:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">- ElementProHD</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; spawn: <b>-39.5,86,-62.5,-90,0</b>&nbsp;&nbsp;&nbsp;&nbsp; (This is the world spawn/spectator
+location).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;</span></p>
+<span>===================================================================================</span><br>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span>2. Once you have done you can
+start with anything but I do it like this :<br>
+<br>
+</span></b><span style="color:black;"></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">remove-drops:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (This is the list of items
+you want to remove off the GROUND).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">- golden helmet</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">- leather chestplate</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">- iron leggings</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">- leather boots</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">- glass</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">- steak</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">repair-drops:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">- iron sword&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (This will remove items that
+are on the ground instead of leaving them).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">- bow</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">- diamond pickaxe</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;</span></p>
+<span>===================================================================================</span><br>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span>3. Next work on the load out
+with tells the server or plugin what items it needs to give each player:</span></b><span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">loadout:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; <b>effects:</b> </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; - damage resistance:5,5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (This section is for any effects
+players goto bottom).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; <b>helmet:</b></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; item: leader helmet&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (This is for what you want in each
+armour slot </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; <b>chestplate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>they don't have to be
+filled).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; item: leather chestplate&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; <b>leggings:</b></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; item: iron leggings</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; <b>boots:</b></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; item: leather boots</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; <b>0</b>:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (The 0 means 1st
+slot in the hotbar scroll to bottom).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; item: <b>iron sword </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Iron sword is the item it will
+give you in first slot).&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; <b>1</b>:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; item: bow</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; enchants:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; <b>- arrow_infinite:1 </b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(This is a enchantment for a bow
+scroll to bottom for more).&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; 2: </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; item: diamond pickaxe</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; 3:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; item: log:2</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; <b>amount: 32&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>(This is the amount of
+item you want to give no more than 64)</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; 4: </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; item: glass</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; amount: 32</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; 5:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; item: golden apple</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; amount: 3</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; 6:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; item: steak</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; amount: 32</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; 7:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; item: exp_bottle</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; amount: 4</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; 27:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; item: arrow</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; amount: 1</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; 28:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; item: lapis block</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; amount: 1</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;</span></p>
+<span>===================================================================================</span><br>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span>This is a list of all the
+effects : &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp;</span></b><span style="color:black;">Source : https://docs.avicus.net</span><span></span></p>
+
+<table class="MsoNormalTable" style="width:635.25pt;border:none;">
+ <tbody><tr>
+  <td style="border:solid #DDDDDD 1.0pt;
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;text-align:center;
+  "><b><span style="color:#333333;">Name</span></b></p>
+  </td>
+  <td style="border:solid #DDDDDD 1.0pt;border-left:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;text-align:center;
+  "><b><span style="color:#333333;">Effect</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">ABSORPTION</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Increases the maximum
+  non-regenerable health of an entity, but is refilled every 30 seconds.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">BLINDNESS</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Blinds an entity.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">CONFUSION</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Warps vision on the
+  client.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">DAMAGE_RESISTANCE</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Decreases damage dealt to
+  an entity.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">FAST_DIGGING</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Increases dig speed.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">FIRE_RESISTANCE</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Stops fire damage.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">HARM</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Hurts an entity.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">HEAL</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Heals an entity.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">HEALTH_BOOST</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Increases the maximum
+  health of an entity.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">HUNGER</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Increases hunger.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">INCREASE_DAMAGE</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Increases damage dealt.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">INVISIBILITY</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Grants invisibility.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">JUMP</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Increases jump height.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">NIGHT_VISION</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Allows an entity to see
+  in the dark.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">POISON</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Deals damage to an entity
+  over time.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">REGENERATION</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Regenerates health.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">SATURATION</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Increase food level of an
+  entity each tick.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">SLOW</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Decreases movement speed.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">SLOW_DIGGING</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Decreases dig speed.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">SPEED</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Increases movement speed.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">WATER_BREATHING</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Allows breathing
+  underwater.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">WEAKNESS</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Decreases damage dealt by
+  entity.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">WITHER</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Deals damage to an entity
+  over time and gives the health to the shooter.</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span>This is a list of all the item
+slots as follows :<br>
+</span></b><b><span><img src="file:///C:\Users\user\AppData\Local\Temp\msohtmlclip1\01\clip_image001.png" alt="https://docs.avicus.net/assets/inventory.png"></span></b><b><span><br>
+<br>
+Here is a list of the available enchantments different to vanilla
+minecraft&nbsp;:</span></b><span></span></p>
+
+<table class="MsoNormalTable" style="width:635.25pt;border:none;">
+ <tbody><tr>
+  <td style="border:solid #DDDDDD 1.0pt;
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;text-align:center;
+  "><b><span style="color:#333333;">Name</span></b></p>
+  </td>
+  <td style="border:solid #DDDDDD 1.0pt;border-left:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;text-align:center;
+  "><b><span style="color:#333333;">Effect</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">ARROW_DAMAGE</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Applied to bows to
+  provide extra damage.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">ARROW_FIRE</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Sets entities on fire
+  when shot.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">ARROW_INFINITE</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Provides infinite arrows
+  when shooting with a bow.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">ARROW_KNOCKBACK</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Provides a knockback when
+  an entity is hit by an arrow from a bow.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">DAMAGE_ALL</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Called Sharpness in
+  Minecraft, this applies inreased damage on any item.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">DAMAGE_ARTHROPODS</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Increases damage against
+  all arthropod targets.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">DAMAGE_UNDEAD</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Increases damage against
+  undead targets such as Zombies.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">DIG_SPEED</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Increases the rate at
+  which you mine/dig.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">DURABILITY</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Decreases the rate at
+  which a tool loses durability.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">FIRE_ASPECT</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">When attacking a target,
+  it has a chance to set them on fire.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">KNOCKBACK</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">All damage to other
+  targets will knock them back when hit.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">LOOT_BONUS_BLOCKS</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Provides a chance of
+  gaining extra loot when destroying blocks.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">LOOT_BONUS_MOBS</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Provides a chance of
+  gaining extra loot when killing monsters.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">OXYGEN</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Decreases the rate of air
+  loss whilst underwater.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">PROTECTION_ENVIRONMENTAL</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Provides protection
+  against environmental damage.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">PROTECTION_EXPLOSIONS</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Provides protection
+  against explosive damage, such as TNT and creepers.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">PROTECTION_FALL</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Provides protection
+  against fall damage.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">PROTECTION_FIRE</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Provides protection
+  against fire damage.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">PROTECTION_PROJECTILE</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Provides protection
+  against projectile damage, such as arrows.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">SILK_TOUCH</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Allows specific blocks to
+  drop themselves instead of their typical drops.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">THORNS</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Damages the attacker.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">WATER_WORKER</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Increases the speed at
+  which a player may mine underwater.</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span>Team colours as follows :&nbsp;</span></b><span></span></p>
+
+<table class="MsoNormalTable" style="width:75.0pt;border:none;
+ ">
+ <tbody><tr>
+  <td style="border:solid #DDDDDD 1.0pt;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">RED</span><span style="color:#333333;"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">LIGHT_RED</span><span style="color:#333333;"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">BLUE</span><span style="color:#333333;"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">GREEN</span><span style="color:#333333;"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">LIME</span><span style="color:#333333;"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">YELLOW</span><span style="color:#333333;"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">ORANGE</span><span style="color:#333333;"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">PURPLE</span><span style="color:#333333;"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">PINK</span><span style="color:#333333;"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">GRAY</span><span style="color:#333333;"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">NAVY</span><span style="color:#333333;"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">WHITE</span><span style="color:#333333;"></span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">LIGHT_GRAY</span><span style="color:#333333;"></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">Source :
+https://docs.avicus.net</span></p>
+<span>===================================================================================</span><br>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span>4.&nbsp;Next work on the teams
+you want (Colours above^) :<br>
+<br>
+</span></b><span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">teams:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; yellow:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (This is
+the colour).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; spawn: -0.5,66,-130.5,-0,0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (This is for the TEAMS spawn
+point).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; title: Losers&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Title for the
+team).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; max: 15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Maximum of players in the team make
+the other the same).</span></p>
+<span>===================================================================================</span><br>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span>5.&nbsp;Next work on the
+monuments for that mean and add a extra part like this:<br>
+<br>
+</span></b><span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">teams:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; yellow:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; spawn: -0.5,66,-130.5,-0,0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; title: Losers</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; max: 15</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;<b>&nbsp;&nbsp;
+monuments:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>(Monuments title).<b></b></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><span style="color:black;">(This is a example if you
+want more just add a extra like below:).<b></b></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name: Left&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><span style="color:black;">(Title that is displayed
+for this monument).<b></b></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; location: 18,67,5 </span></b><span style="color:black;">&nbsp;(This is cords for monument when measuring
+make sure your head is in mon).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b: </span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name: Right</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; location: 76,34,4</span></b><span style="color:black;"></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><i><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c:</span></i></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><i><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name: Middle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></i><span style="color:black;">(This is if you want to
+add extra).<i></i></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><i><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; location: 34,33,9</span></i><span style="color:black;"></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span>===================================================================================</span><br><b><span>
+6.&nbsp;Next just do another for the other team and put them together like
+this:<br>
+<br>
+</span></b><span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">teams:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; yellow:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; spawn: -0.5,66,-130.5,-0,0</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; title: Losers</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; max: 15</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; monuments:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name: Left</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; location: 18,67,5</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name: Right</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; location: -20,67,5</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp; purple:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></b><span style="color:black;">(This is for the second
+team).<b></b></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp; spawn: -0.5,66,5.5,-180,0</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp; title: Winners</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp; max: 15</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp; monuments:</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a:</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name: Left</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; location: -20,67,-131</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b:</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name: Right</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; location: -53,67,342</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;</span></b></p><span>===================================================================================</span>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span>7. This
+is&nbsp;probably&nbsp;the hardest part just look at images below for more help
+(This will protect blocks from players breaking them used for protecting spawns
+etc):<br>
+</span></b><span><br>
+<br>
+</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; red-spawn:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Title of region this
+won't be displayed </span><span><a href="https://docs.avicus.net/components/regions" title="Link: https://docs.avicus.net/components/regions"><span style="color:black">more regions</span></a></span><span style="
+
+color:black;">).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; type: cylinder&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Type of shape for region).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; center: -42,34,-814&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Center of the </span><span style="color:black;">cylinder). </span><span style="color:black;"></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; radius: 13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Radius more info </span><span><a href="https://docs.avicus.net/assets/cylinder.png" title="Link: https://docs.avicus.net/assets/cylinder.png"><span style="color:black">here</span></a></span><span style="
+
+color:black;">)</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; height: 7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Height more info </span><span><a href="https://docs.avicus.net/assets/cylinder.png" title="Link: https://docs.avicus.net/assets/cylinder.png"><span style="color:black">here</span></a></span><span style="
+
+color:black;">)</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; flags:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; build:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; who: '*'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (This means message to
+everyone)</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; message: 'Message to players' (Message
+will be sent if they try and break it, </span><span><a href="http://ess.khhq.net/mc/" title="Link: http://ess.khhq.net/mc/"><span style="color:black">make
+it coloured</span></a></span><span style="color:black;">)</span><span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; box:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; type: cuboid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Type of region this won't be
+displayed </span><span><a href="https://docs.avicus.net/components/regions" title="Link: https://docs.avicus.net/components/regions"><span style="color:black">more regions</span></a></span><span style="
+
+color:black;">)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; min: 1 57 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (This is cords for the bottom
+corner).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; max: 10 53 10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (This is the top corner of the
+cuboid opposite to other one)</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; flags:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; build:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; who: '*'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; message: '&amp;cYou may not edit this
+loaction!' (Message to player trying to edit region).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span>This is points for a cuboid :<br>
+</span></b><b><span><img src="file:///C:\Users\user\AppData\Local\Temp\msohtmlclip1\01\clip_image002.png" alt="http://i.imgur.com/Owa6vHA.png"></span></b><span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;</span></p>
+<span>===================================================================================</span><br>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span>8. You
+are&nbsp;actually&nbsp;done but here are some&nbsp;useful&nbsp;things to put
+have in your YML this a part copied from&nbsp;Formorgar 1 and it means that
+when theres a gold block on the floor it changes/modifies it to 4 XP bottles:<br>
+<br>
+</span></b><span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp; everywhere:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Applies everywhere
+on map).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; type: global</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp; flags:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; build:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; who: '*'&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Works for everyone this
+means).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; allow: true</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; triggers:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (What triggers the
+action).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; modify_drops:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type: gold_block&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Item that will be replaced on the
+ground).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; drops:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0:</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; item: exp_bottle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (Item will be changed to 4 XP bottles).</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; amount: 4</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span>Here is a list of triggers:
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></b><span style="color:black;">Source : https://docs.avicus.net</span><span></span></p>
+
+<table class="MsoNormalTable" style="width:635.25pt;border:none;">
+ <tbody><tr>
+  <td style="width:126.75pt;border:solid #DDDDDD 1.0pt;
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;text-align:center;
+  "><b><span style="color:#333333;">Name</span></b></p>
+  </td>
+  <td style="border:solid #DDDDDD 1.0pt;border-left:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;text-align:center;
+  "><b><span style="color:#333333;">Action</span></b></p>
+  </td>
+  <td style="width:361.5pt;border:solid #DDDDDD 1.0pt;
+  border-left:none;
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;text-align:center;
+  "><b><span style="color:#333333;">Required Variables</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">heal</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Heals the player</span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">amount</span><span style="color:#333333;">&nbsp;Health to give,
+  measured in half-hearts</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">feed</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Satisfy the hunger</span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">amount</span><span style="color:#333333;">&nbsp;Number of food
+  points to give, measured in half-food-points</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">teleport</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Move to a location</span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">to</span><span style="color:#333333;">&nbsp;The coordinate the
+  player will be teleported to</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">modify_drops</span><span style="color:#333333;">&nbsp;*</span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Change the drops of
+  destroyed blocks</span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">type</span><span style="color:#333333;">&nbsp;The type of block
+  to modify. Use an asterisk to indicate all blocks.&nbsp;<br>
+  </span><span style="
+  color:#C7254E;background:#F9F2F4;">drops</span><span style="color:#333333;">&nbsp;A loadout containing the items to drops</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">modify_projectile</span><span style="color:#333333;">&nbsp;**</span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Change the projectile
+  type of a bow shot.</span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">projectile</span><span style="color:#333333;">&nbsp;The entity to shoot
+  instead of an arrow&nbsp;<br>
+  </span><span style="
+  color:#C7254E;background:#F9F2F4;">velocity</span><span style="color:#333333;">&nbsp;The velocity of the entity (default is 2.2)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">ignite_tnt</span><span style="color:#333333;">&nbsp;***</span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Configure TNT to ignite
+  once place</span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">delay</span><span style="color:#333333;">&nbsp;Time until
+  explosion in seconds (default is 3.0)&nbsp;<br>
+  </span><span style="
+  color:#C7254E;background:#F9F2F4;">block-damage</span><span style="color:#333333;">&nbsp;Toggle terrain damage (default is true)&nbsp;<br>
+  </span><span style="
+  color:#C7254E;background:#F9F2F4;">yield</span><span style="color:#333333;">&nbsp;Percent of block items dropped caused by explosion (default is
+  0)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">give_loadout</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Rewards a set of items and
+  effects</span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">loadout</span><span style="color:#333333;">&nbsp;A loadout
+  containing to give the killer</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;background:#F9F9F9;
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">set_loadout</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Sets the inventory and
+  potion effects for a player. Can function as kits upon clicking a sign for
+  entering an area.</span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  background:#F9F9F9;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">loadout</span><span style="color:#333333;">&nbsp;A loadout
+  containing to give the killer</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td style="border:solid #DDDDDD 1.0pt;border-top:none;padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">score</span><span style="color:#333333;"></span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#333333;">Nebula TDM and Nexus
+  trigger that rewards the team with a specified amount of points.</span></p>
+  </td>
+  <td style="border-top:none;border-left:none;border-bottom:solid #DDDDDD 1.0pt;
+  border-right:solid #DDDDDD 1.0pt;
+  
+  padding:3.75pt 3.75pt 3.75pt 3.75pt">
+  <p class="MsoNormal" style="margin-bottom:15.0pt;"><span style="color:#C7254E;background:#F9F2F4;">amount</span><span style="color:#333333;">&nbsp;Amount of points to
+  give to the team</span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span>&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;</span></p>
+<span>===================================================================================</span><br>
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span>Thats mostly all I will be
+adding more in the future this is how to put together a normal YML it can be
+easily changed I have used help from&nbsp;https://docs.avicus.net/ which shows
+you how to make a YML in lots of depth but I thought I would explain it please
+note this is how to make a 2&nbsp;<u>Team DTM map.<br>
+<br>
+</u></span></b><span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span>Hope this helped comment below
+what you want me to add, improve, if I have made anymistakes, or If I have got
+something wrong.</span></b><span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span>&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span>&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:12.0pt;"><b><span><br>
+<br>
+</span></b><span></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><b><span style="color:black;">&nbsp;</span></b></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;"><span style="color:black;">&nbsp;</span></p>
+
+<p class="MsoNormal">&nbsp;</p>
+
+<span>
+</span>   
+<hr>
+<h2>
+<a href='/users/Eteh.html' style='color: none'>Eteh</a>
+<small>
+May 16, 2015 at  3:05 PM UTC
+</small>
+</h2>
+Thanks for writing this! It helps, I might try it. This should be stickied
+<hr>
+<h2>
+<a href='/users/ViceTechnicolour.html' style='color: #FF9805'>ViceTechnicolour</a>
+<small>
+May 16, 2015 at  3:05 PM UTC
+</small>
+</h2>
+The spelling, formatting, and bolding makes this really confusing... I feel that as for a more reliable source that is made by kylo and I, docs.avicus.net provides this and more + pictures such as how cuboids and spheres work.<br><br>If there's anything requested for the docs site, I can try to add it but keep in mind there's a new doc site coming soon.
+<hr>
+<h2>
+<a href='/users/resepignev.html' style='color: Gray'>resepignev</a>
+<small>
+May 16, 2015 at  3:05 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_190363-1961'>
+Replied to
+ViceTechnicolour
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_190363-1961'>
+The spelling, formatting, and bolding makes this really confusing... I feel that as for a more reliable source that is made by kylo and I, docs.avicus.net provides this and more + pictures such as how cuboids and spheres work.<br><br>If there's anything requested for the docs site, I can try to add it but keep in mind there's a new doc site coming soon.
+</blockquote>
+</div>
+Agreed +1
+<hr>
+<h2>
+<a href='/users/RightSide.html' style='color: none'>RightSide</a>
+<small>
+May 16, 2015 at  3:05 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_190364-1260'>
+Replied to
+ViceTechnicolour
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_190364-1260'>
+The spelling, formatting, and bolding makes this really confusing... I feel that as for a more reliable source that is made by kylo and I, docs.avicus.net provides this and more + pictures such as how cuboids and spheres work.<br><br>If there's anything requested for the docs site, I can try to add it but keep in mind there's a new doc site coming soon.
+</blockquote>
+</div>
+The main aim was to try and explain it more xD<br><br>Edit also the cuboid image doesn't work :).
+<hr>
+<h2>
+<a href='/users/Robin_DD_J.html' style='color: none'>Robin_DD_J</a>
+<small>
+May 16, 2015 at  4:05 PM UTC
+</small>
+</h2>
+<a href="https://docs.avicus.net">https://docs.avicus.net</a>&nbsp;?
+<hr>
+<h2>
+<a href='/users/RightSide.html' style='color: none'>RightSide</a>
+<small>
+May 16, 2015 at  4:05 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_190377-3300'>
+Replied to
+Robin_DD_J
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_190377-3300'>
+<a href="https://docs.avicus.net">https://docs.avicus.net</a>&nbsp;?
+</blockquote>
+</div>
+Yes I just explained it more and ran though a YML.
+<hr>
+<h2>
+<a href='/users/Robin_DD_J.html' style='color: none'>Robin_DD_J</a>
+<small>
+May 16, 2015 at  4:05 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_190382-3357'>
+Replied to
+RightSide
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_190382-3357'>
+Yes I just explained it more and ran though a YML.
+</blockquote>
+</div>
+Ow, my bad
+<hr>
+<h2>
+<a href='/users/RightSide.html' style='color: none'>RightSide</a>
+<small>
+May 16, 2015 at  5:05 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_190393-309'>
+Replied to
+Robin_DD_J
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_190393-309'>
+Ow, my bad
+</blockquote>
+</div>
+Its ok :)
+<hr>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<div class='bottom-nav fixed-bottom p-4' style='background-color: #a1d6d6'>
+<ul class='inline-list reduce-1 m-0'>
+<li>
+This website is an archive of data gathererd by Avicus Network LLC between the years of 2013 and 2017
+<br>
+Copyright Ⓒ 2012-2017 Avicus Network LLC. All Rights Reserved
+<br>
+</li>
+<li>
+<a class='no-decor fg-white fg-white-hover' href='https://discord.gg/4VR84ce'>Discord</a>
+</li>
+<li>
+<a class='no-decor fg-white fg-white-hover' href='https://github.com/Avicus/'>GitHub</a>
+</li>
+<li>
+<a class='no-decor fg-white fg-white-hover' href='https://xml.avicus.net'>XML Documentation</a>
+</li>
+</ul>
+</div>
+<!-- Metro 4 -->
+<script src='https://cdn.metroui.org.ua/v4.4.2/js/metro.min.js'></script>
+</body>
+</html>

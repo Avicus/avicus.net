@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<!-- Required meta tags -->
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+<!-- Metro 4 -->
+<link href='https://cdn.metroui.org.ua/v4.4.2/css/metro-all.min.css' rel='stylesheet'>
+<link href='/favicon.ico' rel='shortcut icon'>
+<title>Testing and Integrating Full Minecraft 1.8 - Avicus Network</title>
+<meta content='Testing and Integrating Full Minecraft 1.8 - Avicus Network' property='og:title'>
+<meta content='website' property='og:type'>
+<style>
+  body {
+    background-color: #e1eded;
+  }
+  
+  hr {
+    background-color: #abc2c2;
+  }
+</style>
+</head>
+<body class='m4-cloak' style='padding-top: 52px'>
+<heder data-expand-point='md' data-role='appbar'>
+<a class='brand no-hover' href='#'>
+<span class='text-center' style='width: 140px; font-size: 140%'>
+Avicus Archive
+</span>
+</a>
+<ul class='app-bar-menu'>
+<li>
+<a href='/index.html'>Home</a>
+</li>
+<li>
+<a href='/forums.html'>Forums</a>
+</li>
+</ul>
+</heder>
+<div class='container-fluid mt-5'>
+<div class='container'>
+<h1>
+Testing and Integrating Full Minecraft 1.8
+by
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>August 22, 2015 at  6:08 AM UTC</small>
+</h1>
+I rolled out Minecraft 1.8 (dropping 1.7 support) <b>on a couple servers today </b>and if all goes well, we will be full 1.8 when the time is right. If you are already panicking based on that, know that we're doing this because we love our players and want to give you all the best server experience possible. We'll be working on optimizing our server for 1.8 because other plugins have dropped development on the older versions and it has become a hassle lacking the new features and latest fixes. We're talking less lag and more cool features with updates, at least that's the plan :P<br><br>In addition to the version dealio, you're all test subjects with a new anti-cheat plugin that I have high hopes for, but it will require some fiddling for it to better suit a PVP server (again, only on a couple servers right now). It's not developed by us, but it is designed to be a more efficient and lightweight alternative to NoCheatPlus which we have used for some time now. We may switch back, who knows!<br><br>Finally, I made some changes to Avicus and Avicore which target potential sources of block lag. Those are deployed on the select few servers.<br><br>Server Test Subjects (updated 8/22/2015 2:00 AM EST)<br><ul><li><b>DTM01</b></li><li><b>CTW01</b></li></ul><b>Edit:</b> I don't know why it's kicking people, but that's gonna be fixed.<b><br><br>Edit 2: </b>Try out full 1.8 (no 1.7 clients connected) using this IP:<b> 1.8.avic.us</b>
+<hr>
+<h2>
+<a href='/users/fazer153.html' style='color: none'>fazer153</a>
+<small>
+August 22, 2015 at  6:08 AM UTC
+</small>
+</h2>
+YES
+<hr>
+<h2>
+<a href='/users/source_route.html' style='color: #5D5D5D'>source_route</a>
+<small>
+August 22, 2015 at  6:08 AM UTC
+</small>
+</h2>
+go back to avicus 1.0
+<hr>
+<h2>
+<a href='/users/dilpickel.html' style='color: #5D5D5D'>dilpickel</a>
+<small>
+August 22, 2015 at  6:08 AM UTC
+</small>
+</h2>
+Yay! Great work!
+<hr>
+<h2>
+<a href='/users/Subscriptor.html' style='color: none'>Subscriptor</a>
+<small>
+August 22, 2015 at  6:08 AM UTC
+</small>
+</h2>
+There is a god!
+<hr>
+<h2>
+<a href='/users/Numberz_.html' style='color: none'>Numberz_</a>
+<small>
+August 22, 2015 at  6:08 AM UTC
+</small>
+</h2>
+Rip.
+<hr>
+<h2>
+<a href='/users/DonaldMyTrump.html' style='color: none'>DonaldMyTrump</a>
+<small>
+August 22, 2015 at  6:08 AM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222008-4913'>
+Replied to
+Subscriptor
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222008-4913'>
+There is a god!
+</blockquote>
+</div>
+Alluha Akbar
+<hr>
+<h2>
+<a href='/users/Subscriptor.html' style='color: none'>Subscriptor</a>
+<small>
+August 22, 2015 at  6:08 AM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222009-422'>
+Replied to
+DonaldMyTrump
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222009-422'>
+Alluha Akbar
+</blockquote>
+</div>
+Indeed
+<hr>
+<h2>
+<a href='/users/ImRaging.html' style='color: none'>ImRaging</a>
+<small>
+August 22, 2015 at  6:08 AM UTC
+</small>
+</h2>
+It's good that we're updating...but please focus on block lag
+<hr>
+<h2>
+<a href='/users/Iron.html' style='color: Gray'>Iron</a>
+<small>
+August 22, 2015 at  7:08 AM UTC
+</small>
+</h2>
+I helped!11-! :P
+<hr>
+<h2>
+<a href='/users/FrozenSolstice.html' style='color: none'>FrozenSolstice</a>
+<small>
+August 22, 2015 at  7:08 AM UTC
+</small>
+</h2>
+YEY!
+<hr>
+<h2>
+<a href='/users/Robin_DD_J.html' style='color: none'>Robin_DD_J</a>
+<small>
+August 22, 2015 at  7:08 AM UTC
+</small>
+</h2>
+Good job.<br><br>Now, fix the knockback.<br><br>And then I will actually hug you.
+<hr>
+<h2>
+<a href='/users/xMasterSlayer.html' style='color: none'>xMasterSlayer</a>
+<small>
+August 22, 2015 at  8:08 AM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222045-4831'>
+Replied to
+ImRaging
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222045-4831'>
+It's good that we're updating...but please focus on block lag
+</blockquote>
+</div>
+I agree there is still tonnes of block lag, 1.7 is the least of the servers problems
+<hr>
+<h2>
+<a href='/users/hippitydippity.html' style='color: none'>hippitydippity</a>
+<small>
+August 22, 2015 at  8:08 AM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222047-785'>
+Replied to
+xMasterSlayer
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222047-785'>
+I agree there is still tonnes of block lag, 1.7 is the least of the servers problems
+</blockquote>
+</div>
+Apparently the mix of 1.7 and 1.8 is what's causing block lag and knockback inconsistencies, which is why a full move to 1.8 is the best thing for the server.
+<hr>
+<h2>
+<a href='/users/emilizzle.html' style='color: none'>emilizzle</a>
+<small>
+August 22, 2015 at  8:08 AM UTC
+</small>
+</h2>
+1.8 is great, I don't get it why people complain about it Im using it for months now
+<hr>
+<h2>
+<a href='/users/AstroPizza.html' style='color: #FF5C5C'>AstroPizza</a>
+<small>
+August 22, 2015 at  8:08 AM UTC
+</small>
+</h2>
+I lag like crazy on 1.8 ocn *crosses fingers* please avicus bb dun give me lag
+<hr>
+<h2>
+<a href='/users/xMasterSlayer.html' style='color: none'>xMasterSlayer</a>
+<small>
+August 22, 2015 at  9:08 AM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222057-4017'>
+Replied to
+hippitydippity
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222057-4017'>
+Apparently the mix of 1.7 and 1.8 is what's causing block lag and knockback inconsistencies, which is why a full move to 1.8 is the best thing for the server.
+</blockquote>
+</div>
+oh ok sorry i was unaware of this
+<hr>
+<h2>
+<a href='/users/Javipepe.html' style='color: none'>Javipepe</a>
+<small>
+August 22, 2015 at  9:08 AM UTC
+</small>
+</h2>
+Gotta love you
+<hr>
+<h2>
+<a href='/users/Tazz.html' style='color: Gray'>Tazz</a>
+<small>
+August 22, 2015 at  9:08 AM UTC
+</small>
+</h2>
+Why 1.8 brb killing myself
+<hr>
+<h2>
+<a href='/users/Subscriptor.html' style='color: none'>Subscriptor</a>
+<small>
+August 22, 2015 at  9:08 AM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222067-2988'>
+Replied to
+Tazz
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222067-2988'>
+Why 1.8 brb killing myself
+</blockquote>
+</div>
+there is no toggle sneak for 1.8<br><br><br><br>xd
+<hr>
+<h2>
+<a href='/users/badgg.html' style='color: none'>badgg</a>
+<small>
+August 22, 2015 at  9:08 AM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222068-1324'>
+Replied to
+Subscriptor
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222068-1324'>
+there is no toggle sneak for 1.8<br><br><br><br>xd
+</blockquote>
+</div>
+disqualified
+<hr>
+<h2>
+<a href='/users/Subscriptor.html' style='color: none'>Subscriptor</a>
+<small>
+August 22, 2015 at  9:08 AM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222069-579'>
+Replied to
+badgg
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222069-579'>
+disqualified
+</blockquote>
+</div>
+horsefker
+<hr>
+<h2>
+<a href='/users/Javipepe.html' style='color: none'>Javipepe</a>
+<small>
+August 22, 2015 at  9:08 AM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222070-1489'>
+Replied to
+Robin_DD_J
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222070-1489'>
+Good job.<br><br>Now, fix the knockback.<br><br>And then I will actually hug you.
+</blockquote>
+</div>
+Fixed in 1.8 servers.&nbsp;<br><br>Hug us if you wish :]
+<hr>
+<h2>
+<a href='/users/Robin_DD_J.html' style='color: none'>Robin_DD_J</a>
+<small>
+August 22, 2015 at 10:08 AM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222075-2208'>
+Replied to
+Javipepe
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222075-2208'>
+Fixed in 1.8 servers.&nbsp;<br><br>Hug us if you wish :]
+</blockquote>
+</div>
+I went on DTM01 and got knocked back 10 blocks within 2 hits?
+<hr>
+<h2>
+<a href='/users/Spoookeh.html' style='color: #009396'>Spoookeh</a>
+<small>
+August 22, 2015 at 10:08 AM UTC
+</small>
+</h2>
+Thank you for this! I knew it had to happen eventually and I'm glad of it now.
+<hr>
+<h2>
+<a href='/users/NemoTheFarmer.html' style='color: none'>NemoTheFarmer</a>
+<small>
+August 22, 2015 at 10:08 AM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222083-4707'>
+Replied to
+ImRaging
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222083-4707'>
+It's good that we're updating...but please focus on block lag
+</blockquote>
+</div>
++1
+<hr>
+<h2>
+<a href='/users/BmB.html' style='color: none'>BmB</a>
+<small>
+August 22, 2015 at 11:08 AM UTC
+</small>
+</h2>
+oh god
+<hr>
+<h2>
+<a href='/users/AtditC.html' style='color: none'>AtditC</a>
+<small>
+August 22, 2015 at 11:08 AM UTC
+</small>
+</h2>
+Pls yes
+<hr>
+<h2>
+<a href='/users/jracer15.html' style='color: none'>jracer15</a>
+<small>
+August 22, 2015 at  1:08 PM UTC
+</small>
+</h2>
+You guys are babies, it had to happen at some point
+<hr>
+<h2>
+<a href='/users/BoldAndBrash.html' style='color: Gray'>BoldAndBrash</a>
+<small>
+August 22, 2015 at  2:08 PM UTC
+</small>
+</h2>
+yes
+<hr>
+<h2>
+<a href='/users/Fuseh.html' style='color: none'>Fuseh</a>
+<small>
+August 22, 2015 at  2:08 PM UTC
+</small>
+</h2>
+R.I.P block hit. :^(
+<hr>
+<h2>
+<a href='/users/Robin_DD_J.html' style='color: none'>Robin_DD_J</a>
+<small>
+August 22, 2015 at  2:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222141-3459'>
+Replied to
+Fuseh
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222141-3459'>
+R.I.P block hit. :^(
+</blockquote>
+</div>
+Not really, just the animation
+<hr>
+<h2>
+<a href='/users/ImRaging.html' style='color: none'>ImRaging</a>
+<small>
+August 22, 2015 at  2:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222142-455'>
+Replied to
+hippitydippity
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222142-455'>
+Apparently the mix of 1.7 and 1.8 is what's causing block lag and knockback inconsistencies, which is why a full move to 1.8 is the best thing for the server.
+</blockquote>
+</div>
+ooooo interesting...
+<hr>
+<h2>
+<a href='/users/Rainstruck.html' style='color: none'>Rainstruck</a>
+<small>
+August 22, 2015 at  3:08 PM UTC
+</small>
+</h2>
+Yay! Now I won't lag as much!
+<hr>
+<h2>
+<a href='/users/Javipepe.html' style='color: none'>Javipepe</a>
+<small>
+August 22, 2015 at  4:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222161-4235'>
+Replied to
+Robin_DD_J
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222161-4235'>
+I went on DTM01 and got knocked back 10 blocks within 2 hits?
+</blockquote>
+</div>
+That's perfectly plausible, that's vanilla minecraft. The error was that player order had an impact on the knockback which was why people got knocked different distances under the same circumstances but the time they logged in.
+<hr>
+<h2>
+<a href='/users/DaFrozenBlaze.html' style='color: none'>DaFrozenBlaze</a>
+<small>
+August 22, 2015 at  4:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222165-1400'>
+Replied to
+Javipepe
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222165-1400'>
+That's perfectly plausible, that's vanilla minecraft. The error was that player order had an impact on the knockback which was why people got knocked different distances under the same circumstances but the time they logged in.
+</blockquote>
+</div>
+There is some glitch where blocks don't register, when ninja, breezily and other types of bridging that invovles non-shifting.
+<hr>
+<h2>
+<a href='/users/Pelpelajax.html' style='color: Gray'>Pelpelajax</a>
+<small>
+August 22, 2015 at  4:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222169-1607'>
+Replied to
+DaFrozenBlaze
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222169-1607'>
+There is some glitch where blocks don't register, when ninja, breezily and other types of bridging that invovles non-shifting.
+</blockquote>
+</div>
+Told Kylo, add me on skype to provide a video.
+<hr>
+<h2>
+<a href='/users/PokerFace.html' style='color: Gray'>PokerFace</a>
+<small>
+August 22, 2015 at  6:08 PM UTC
+</small>
+</h2>
+The only thing I'm hyped for from the update is floor buttons :o<br><br>And of course less block lag.
+<hr>
+<h2>
+<a href='/users/Vobaseball12.html' style='color: Gray'>Vobaseball12</a>
+<small>
+August 22, 2015 at  6:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222197-164'>
+Replied to
+PokerFace
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222197-164'>
+The only thing I'm hyped for from the update is floor buttons :o<br><br>And of course less block lag.
+</blockquote>
+</div>
+Defense upgrades &gt;:)
+<hr>
+<h2>
+<a href='/users/DaFrozenBlaze.html' style='color: none'>DaFrozenBlaze</a>
+<small>
+August 22, 2015 at  6:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222198-3528'>
+Replied to
+PokerFace
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222198-3528'>
+The only thing I'm hyped for from the update is floor buttons :o<br><br>And of course less block lag.
+</blockquote>
+</div>
+Rip pressure plates 2k15, Buttons still get washed away
+<hr>
+<h2>
+<a href='/users/DaFrozenBlaze.html' style='color: none'>DaFrozenBlaze</a>
+<small>
+August 22, 2015 at  6:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222217-2219'>
+Replied to
+Pelpelajax
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222217-2219'>
+Told Kylo, add me on skype to provide a video.
+</blockquote>
+</div>
+I'll try to record a video.
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+August 22, 2015 at  7:08 PM UTC
+</small>
+</h2>
+<span style="color: rgb(51, 51, 51); font-family: Lato, Helvetica, Arial, sans-serif; ">Try out full 1.8 (no 1.7 clients connected) using this IP:</span><b style="color: rgb(51, 51, 51); font-family: Lato, Helvetica, Arial, sans-serif; ">&nbsp;1.8.avic.us</b>
+<hr>
+<h2>
+<a href='/users/Robin_DD_J.html' style='color: none'>Robin_DD_J</a>
+<small>
+August 22, 2015 at  7:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222245-2317'>
+Replied to
+DaFrozenBlaze
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222245-2317'>
+Rip pressure plates 2k15, Buttons still get washed away
+</blockquote>
+</div>
+Pressure plates dont get washed away? Buttons do.<br><div><br></div>
+<hr>
+<h2>
+<a href='/users/Zintenka.html' style='color: none'>Zintenka</a>
+<small>
+August 22, 2015 at  7:08 PM UTC
+</small>
+</h2>
+Nicely done Developers. I believe that this will go over well enough :)
+<hr>
+<h2>
+<a href='/users/Fuseh.html' style='color: none'>Fuseh</a>
+<small>
+August 23, 2015 at  2:08 AM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222361-1858'>
+Replied to
+Robin_DD_J
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222361-1858'>
+Not really, just the animation
+</blockquote>
+</div>
+Yea, the animation of the 1.8 block hit makes me cry it looks nasty.<br><b>EDIT :&nbsp;</b>Is Avicus fully 1.8?
+<hr>
+<h2>
+<a href='/users/Jahaj.html' style='color: none'>Jahaj</a>
+<small>
+August 23, 2015 at  3:08 AM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222368-3187'>
+Replied to
+Fuseh
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222368-3187'>
+Yea, the animation of the 1.8 block hit makes me cry it looks nasty.<br><b>EDIT :&nbsp;</b>Is Avicus fully 1.8?
+</blockquote>
+</div>
+Not yet, just the DTM01 and CTW01 servers, but it probably will be soon.
+<hr>
+<h2>
+<a href='/users/DaFrozenBlaze.html' style='color: none'>DaFrozenBlaze</a>
+<small>
+August 23, 2015 at  5:08 AM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222386-3710'>
+Replied to
+Robin_DD_J
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222386-3710'>
+Pressure plates dont get washed away? Buttons do.<br><div><br></div>
+</blockquote>
+</div>
+I know
+<hr>
+<h2>
+<a href='/users/DaGoldBrick.html' style='color: none'>DaGoldBrick</a>
+<small>
+August 23, 2015 at  4:08 PM UTC
+</small>
+</h2>
+Why have only 2 dedicated servers for this? Either make the entire network 1.8 or leave the entire network 1.7 + 1.8
+<hr>
+<h2>
+<a href='/users/AstroPizza.html' style='color: #FF5C5C'>AstroPizza</a>
+<small>
+August 23, 2015 at  4:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222536-218'>
+Replied to
+DaGoldBrick
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222536-218'>
+Why have only 2 dedicated servers for this? Either make the entire network 1.8 or leave the entire network 1.7 + 1.8
+</blockquote>
+</div>
+It's for testing purposes mainly , i'm sure it will be fully 1.8 once they fix any bugs they find.
+<hr>
+<h2>
+<a href='/users/rinn.html' style='color: Gray'>rinn</a>
+<small>
+August 23, 2015 at  4:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222538-403'>
+Replied to
+source_route
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222538-403'>
+go back to avicus 1.0
+</blockquote>
+</div>
+Stop.
+<hr>
+<h2>
+<a href='/users/awesome_apricot.html' style='color: none'>awesome_apricot</a>
+<small>
+August 23, 2015 at  4:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222539-1066'>
+Replied to
+DaGoldBrick
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222539-1066'>
+Why have only 2 dedicated servers for this? Either make the entire network 1.8 or leave the entire network 1.7 + 1.8
+</blockquote>
+</div>
+There's loads of bugs the whole server doesn't need..<br><br>Like the spectator name tag glitch. Hope that gets fixed.
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+August 23, 2015 at  4:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222541-1392'>
+Replied to
+awesome_apricot
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222541-1392'>
+There's loads of bugs the whole server doesn't need..<br><br>Like the spectator name tag glitch. Hope that gets fixed.
+</blockquote>
+</div>
+Well I don't know about "loads" but there may be a few. Report any if you see them at the typical:&nbsp;<a href="http://avicus.net/issues" rel="nofollow">avicus.net/issues</a>.
+<hr>
+<h2>
+<a href='/users/awesome_apricot.html' style='color: none'>awesome_apricot</a>
+<small>
+August 23, 2015 at  5:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222544-687'>
+Replied to
+keenanjt
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222544-687'>
+Well I don't know about "loads" but there may be a few. Report any if you see them at the typical:&nbsp;<a href="http://avicus.net/issues" rel="nofollow">avicus.net/issues</a>.
+</blockquote>
+</div>
+I was just presuming seeing as it's a relatively large step up.<br><br><a href="https://github.com/Avicus/Issues/issues/623">https://github.com/Avicus/Issues/issues/623</a>
+<hr>
+<h2>
+<a href='/users/Dyspa.html' style='color: none'>Dyspa</a>
+<small>
+August 23, 2015 at  6:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222566-3242'>
+Replied to
+keenanjt
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222566-3242'>
+Well I don't know about "loads" but there may be a few. Report any if you see them at the typical:&nbsp;<a href="http://avicus.net/issues" rel="nofollow">avicus.net/issues</a>.
+</blockquote>
+</div>
+Will you bring those "x" that showed the monument's location back again?
+<hr>
+<h2>
+<a href='/users/Myv.html' style='color: #009396'>Myv</a>
+<small>
+August 23, 2015 at  6:08 PM UTC
+</small>
+</h2>
+rip
+<hr>
+<h2>
+<a href='/users/Nemi.html' style='color: none'>Nemi</a>
+<small>
+August 23, 2015 at  6:08 PM UTC
+</small>
+</h2>
+Rip
+<hr>
+<h2>
+<a href='/users/Zintenka.html' style='color: none'>Zintenka</a>
+<small>
+August 23, 2015 at  7:08 PM UTC
+</small>
+</h2>
+I played some yesterday and I say - besides the very few glitches - that the 1.8 servers don't lag as often as the 1.7/1.8 server. Please, integrate full 1.8 support ASAP :P
+<hr>
+<h2>
+<a href='/users/Emmaye.html' style='color: Gray'>Emmaye</a>
+<small>
+August 23, 2015 at  8:08 PM UTC
+</small>
+</h2>
+I like the change and all for the most part.<br><br>The only problem I had was some NCP issues but nothing too serious.
+<hr>
+<h2>
+<a href='/users/Chief_Hacks.html' style='color: #5D5D5D'>Chief_Hacks</a>
+<small>
+August 23, 2015 at  9:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222617-2369'>
+Replied to
+rinn
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222617-2369'>
+Stop.
+</blockquote>
+</div>
+What did you retire from again?<br><br>jk jk
+<hr>
+<h2>
+<a href='/users/ViceTechnicolour.html' style='color: #FF9805'>ViceTechnicolour</a>
+<small>
+August 23, 2015 at 10:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222627-4966'>
+Replied to
+Dyspa
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222627-4966'>
+Will you bring those "x" that showed the monument's location back again?
+</blockquote>
+</div>
+I heard that feature crashed some players when they got near it.
+<hr>
+<h2>
+<a href='/users/Vobaseball12.html' style='color: Gray'>Vobaseball12</a>
+<small>
+August 24, 2015 at 10:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_222941-3463'>
+Replied to
+keenanjt
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_222941-3463'>
+Well I don't know about "loads" but there may be a few. Report any if you see them at the typical:&nbsp;<a href="http://avicus.net/issues" rel="nofollow">avicus.net/issues</a>.
+</blockquote>
+</div>
+Can the new anti-cheat detector support 1.7 in the other servers? It's working really great, and I'd love to see it working for all servers.
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+August 25, 2015 at  4:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_223205-4557'>
+Replied to
+Vobaseball12
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_223205-4557'>
+Can the new anti-cheat detector support 1.7 in the other servers? It's working really great, and I'd love to see it working for all servers.
+</blockquote>
+</div>
+That's the catch, it's 1.8 only!
+<hr>
+<h2>
+<a href='/users/Zintenka.html' style='color: none'>Zintenka</a>
+<small>
+August 25, 2015 at  4:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_223210-3518'>
+Replied to
+keenanjt
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_223210-3518'>
+That's the catch, it's 1.8 only!
+</blockquote>
+</div>
+So then can you and the others fully update the server? Would be really awesome.
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+August 25, 2015 at  4:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_223212-4723'>
+Replied to
+Zintenka
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_223212-4723'>
+So then can you and the others fully update the server? Would be really awesome.
+</blockquote>
+</div>
+It's only a matter of time, so yes.
+<hr>
+<h2>
+<a href='/users/Zintenka.html' style='color: none'>Zintenka</a>
+<small>
+August 25, 2015 at  4:08 PM UTC
+</small>
+</h2>
+<button class='button primary small' id='collapse_toggle_223218-929'>
+Replied to
+keenanjt
+</button>
+<div class='pos-relative'>
+<blockquote data-collapsed='true' data-role='collapse' data-toggle-element='#collapse_toggle_223218-929'>
+It's only a matter of time, so yes.
+</blockquote>
+</div>
+Alright!
+<hr>
+<h2>
+<a href='/users/Creanetor.html' style='color: none'>Creanetor</a>
+<small>
+September  6, 2015 at 11:09 AM UTC
+</small>
+</h2>
+Ok,Avicus was updated in 1.8 or lapis.<br>But there is one problem the maps such as Rendezous Redux,Formager and other map dont have Lapis Luzui!<br>So it needs to be fixed.
+<hr>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<div class='bottom-nav fixed-bottom p-4' style='background-color: #a1d6d6'>
+<ul class='inline-list reduce-1 m-0'>
+<li>
+This website is an archive of data gathererd by Avicus Network LLC between the years of 2013 and 2017
+<br>
+Copyright Ⓒ 2012-2017 Avicus Network LLC. All Rights Reserved
+<br>
+</li>
+<li>
+<a class='no-decor fg-white fg-white-hover' href='https://discord.gg/4VR84ce'>Discord</a>
+</li>
+<li>
+<a class='no-decor fg-white fg-white-hover' href='https://github.com/Avicus/'>GitHub</a>
+</li>
+<li>
+<a class='no-decor fg-white fg-white-hover' href='https://xml.avicus.net'>XML Documentation</a>
+</li>
+</ul>
+</div>
+<!-- Metro 4 -->
+<script src='https://cdn.metroui.org.ua/v4.4.2/js/metro.min.js'></script>
+</body>
+</html>

@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<!-- Required meta tags -->
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' name='viewport'>
+<!-- Metro 4 -->
+<link href='https://cdn.metroui.org.ua/v4.4.2/css/metro-all.min.css' rel='stylesheet'>
+<link href='/favicon.ico' rel='shortcut icon'>
+<title>[OLD] [4/25/ 15 - 8/7/17] Development Log - Avicus Network</title>
+<meta content='[OLD] [4/25/ 15 - 8/7/17] Development Log - Avicus Network' property='og:title'>
+<meta content='website' property='og:type'>
+<style>
+  body {
+    background-color: #e1eded;
+  }
+  
+  hr {
+    background-color: #abc2c2;
+  }
+</style>
+</head>
+<body class='m4-cloak' style='padding-top: 52px'>
+<heder data-expand-point='md' data-role='appbar'>
+<a class='brand no-hover' href='#'>
+<span class='text-center' style='width: 140px; font-size: 140%'>
+Avicus Archive
+</span>
+</a>
+<ul class='app-bar-menu'>
+<li>
+<a href='/index.html'>Home</a>
+</li>
+<li>
+<a href='/forums.html'>Forums</a>
+</li>
+</ul>
+</heder>
+<div class='container-fluid mt-5'>
+<div class='container'>
+<h1>
+[OLD] [4/25/ 15 - 8/7/17] Development Log
+by
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>April 25, 2015 at 11:04 PM UTC</small>
+</h1>
+See every single change at the <a href="http://avicus.net/revisions" rel="nofollow">revisions page</a>.
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+April 25, 2015 at 11:04 PM UTC
+</small>
+</h2>
+1.8 users should see some new features today:<br><ul><li><strike>Tab list colors fixed (for the most part!)</strike></li><li><a href="http://i.imgur.com/dE9z7Z4.jpg" rel="nofollow" title="Link: http://i.imgur.com/dE9z7Z4.jpg">Announcements on lobby join</a></li><li><a href="http://i.imgur.com/QjLgBZ7.png" rel="nofollow" title="Link: http://i.imgur.com/QjLgBZ7.png">Server and &nbsp;information in the tab list.</a></li></ul>Other recent updates:<br><ul><li>TDM, CTW and DTM condensed into Nebula in the server menu.</li><li>Fixed Nexus win/participation credits.</li><li>Credit sounds play for every kill.</li></ul>
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+April 26, 2015 at  5:04 PM UTC
+</small>
+</h2>
+New credit reward sounds. You can select which sound should play when you earn credits. The default will be the orb pickup sound. Once servers restart and update this will take effect!<br><br><img src="http://i.imgur.com/N9Oq8CT.png" title="Image: http://i.imgur.com/N9Oq8CT.png">
+<hr>
+<h2>
+<a href='/users/scolton.html' style='color: none'>scolton</a>
+<small>
+April 30, 2015 at  3:04 PM UTC
+</small>
+</h2>
+In the last week, as many of you have seen, I implemented&nbsp; /stafflist  (which works) and  /friends  (which I fixed but we're just waiting for changes to be pushed).<br><br>Now, I have added colored text based on the distance of a bow kill at the request of <a href="https://avicus.net/Awesomerp">Awesomerp</a>.  It works as follows:<br><ul><li>If the kill is from less than 20 blocks, the color is light green.</li><li>If the kill is from 20 to 40 blocks, it is green.</li><li>If the kill is from 40 to 60 blocks, the color is yellow.</li><li>If the kill is from 60 to 80 blocks, the color is orange.</li><li>If the kill is from 80 to 150 blocks, the color is dark red.</li><li>If the kill is from <b>more</b> than 150 blocks, the color is dark red.</li></ul>
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+July 12, 2015 at  6:07 AM UTC
+</small>
+</h2>
+<ul><li>Lots of performance enhancements (asynchronous DB calls).</li><li><code>/tracker &lt;reset&gt;</code> which replaces /match</li></ul>
+<hr>
+<h2>
+<a href='/users/Javipepe.html' style='color: none'>Javipepe</a>
+<small>
+July 12, 2015 at  6:07 PM UTC
+</small>
+</h2>
+Enhanced /msg as some of you already saw on the&nbsp;<a href="https://avicus.net/revisions" rel="nofollow" title="Link: https://avicus.net/revisions">Revisions</a> tab. In a nutshell:<br><ul><li>The msgs now displays the team color for the player, and their ranks. Meaning that if you are Emerald the prefix that appears normally on chat will also be sent to the player you msg.</li><li>If the sender and the receiver are on different servers, the name of the server the sender is connected at will also be displayed in the message.</li></ul>This should appear on servers when they restart, hopefully you like it :)
+<hr>
+<h2>
+<a href='/users/Javipepe.html' style='color: none'>Javipepe</a>
+<small>
+July 13, 2015 at  9:07 AM UTC
+</small>
+</h2>
+Hello again! I have added a new command that hopefully you will like: /namehistory. As the command is pretty long it also has two aliases: /nh and /nhist.&nbsp;<br><br>You can probably guess what this does, checks the namehistory for a player on-the-fly. Kylo also made it async so hopefully it won't take more than a second to load. It is server wide. Also all of you have permission to use it.&nbsp;<br><br>Hopefully you'll like it :) <br>Regards<br>javipepe 
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+July 14, 2015 at  2:07 AM UTC
+</small>
+</h2>
+Javi and I are finishing a couple new things today and tomorrow:<br><ul><li>(For Staff) Click the server text to automatically issue /go &lt;player&gt; (take report coming soon!)</li><li>Combat log detection - reports automatically issued to staff.</li><li>New credit bombs! 250x 500x 100x <i>+</i> <i>they actually explode long distance!</i></li><li>New gadgets: kitty cannon, teleport wand</li><li>Dropped items don't combine anymore.</li><li><b>/go teleports you to the server and directly to the player!</b></li></ul>
+<hr>
+<h2>
+<a href='/users/Javipepe.html' style='color: none'>Javipepe</a>
+<small>
+July 15, 2015 at  8:07 AM UTC
+</small>
+</h2>
+Hello! Some new changes that kylo and I have made and should already be live on the servers!<br><br><ul><li>First, a bugfix, teleport on /go was fixed</li><li>Then, a long awaited thing that has finally come into surface, punishment messages for kicks, tempbans and bans (there are too many warns and most, and doesn't really take any effect into the rest of the players). Kylo helped with the message huehue :)</li><li>Warns used to appear in the chat, but now we are adding title support and titles will be displayed on a title if it's a 1.8 user. The message will still be sent just in case it's offline, afk, whatever.</li></ul>Stay tuned, new things are coming!
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+July 22, 2015 at 11:07 PM UTC
+</small>
+</h2>
+Going to take advantage of this MC downtime to perform some maintenance on the server. It shouldn't take longer than 1-2 hours.<br><br><b>And...&nbsp;</b>We're back. Servers coming up soon. MC is still offline though.
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+July 23, 2015 at  2:07 AM UTC
+</small>
+</h2>
+Awesome update!<br><br>When Mojang session servers go down, we do some of our own checks to validate users instead. Even if the session servers are down, if you login from your typical computer and location, you'll be able to access Avicus!
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+July 24, 2015 at 12:07 PM UTC
+</small>
+</h2>
+I added a chat bot to the lobby... Just punch it and it will start talking.
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+August 16, 2015 at 10:08 PM UTC
+</small>
+</h2>
+Fixed sneak-walking into protected regions.<br><br>Servers must finish a rotation and restart first.
+<hr>
+<h2>
+<a href='/users/Javipepe.html' style='color: none'>Javipepe</a>
+<small>
+September 27, 2015 at 12:09 PM UTC
+</small>
+</h2>
+Hello folks.&nbsp;<br><br>As you have probably noticed, there have not been a lot of updates to the server dev-wise, while we have been working on quite a lot of them. I'm now going to explain why these mentioned stuff is not live yet. We are preparing our stuff for 1.8, because we have to change the structure of loads of stuff, drop support for many others, and create new cool stuff.<br><br>To put you into situation, we have a commit where we changed quite a lot of the structure, but that's not finished. Hence that commit is not pushed into the server, meaning it's obviously not live on any server (except Expo, read a bit more and you'll know). On top of that commit we have every update we have made since then.&nbsp;<br><br>Expo is the server where kylo and I test stuff (only seniors, devs, and admins have perms to access it). There, every commit we make gets pushed sooner or later for testing proposes there and only there, to see bugs and debug them; because we don't care if basic (let's say kill tracking) things don't work, however, it's the other way around on public servers. So, in a nutshell, we need to debug the very basic to the very top so we can make sure nothing bad will happen if we push to public servers after their respective restart.<br><br>So basically you'll get the idea with this diagram that would represent the <a href="http://avicus.net/revisions" rel="nofollow">revisions page</a>&nbsp;:<br><br><br><div class="table-responsive">
+<table class="table table-bordered table-striped">
+<tbody><tr>
+<th style="width: 10%">Revision</th>
+<th style="width: 10%">Author</th>
+<th style="width: 60%">Description</th>
+<th style="width: 20%">Date</th>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/Avicus/Avicus/commit/e440b184b315115b117061a3f33fda90483dd985">e440b18</a>
+</td>
+<td>
+<a href="/javipepe" style="color: #006BD2">javipepe</a>
+</td>
+<td>Fix java.util.* import</td>
+<td>about 23 hours ago</td>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/Avicus/Avicus/commit/f9e23ec85b870231de849095c8b2ffe02a1271e4">f9e23ec</a>
+</td>
+<td>
+<a href="/javipepe" style="color: #006BD2">javipepe</a>
+</td>
+<td>Create doublekill/crosskill patch</td>
+<td>about 23 hours ago</td>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/Avicus/Avicus/commit/2b6d9cd1e2fa2f6542380c37ee066a19e72fa8ab">2b6d9cd</a>
+</td>
+<td>thekeenant</td>
+<td>Remove displays attachment in gamer</td>
+<td>19 days ago</td>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/Avicus/Avicus/commit/700eb969f130bc4d431a20d68c671bfdfca194b7">700eb96</a>
+</td>
+<td>thekeenant</td>
+<td>Current version</td>
+<td>19 days ago</td>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/Avicus/Avicus/commit/d501400848c074d3f3a5a89d094bb739a34958e8">d501400</a>
+</td>
+<td>
+<a href="/javipepe" style="color: #006BD2" title="Link: /javipepe">javipepe</a>
+</td>
+<td>Add space so kylo is :smiley:</td>
+<td>25 days ago</td>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/Avicus/Avicus/commit/dc78e95ee9fa55dc649f4e4ee700c0f8a8c68d7d">dc78e95</a>
+</td>
+<td>
+<a href="/javipepe" style="color: #006BD2" title="Link: /javipepe">javipepe</a>
+</td>
+<td>Cancel GamerDamageEvent if gamer is frozen</td>
+<td>26 days ago</td>
+</tr>
+<tr>
+<td>
+<a href="https://github.com/Avicus/Avicus/commit/3b5fb3b540d71a87d1140a634e0651cf07fa7f84">3b5fb3b</a>
+</td>
+<td>keenanthompson</td>
+<td>Update fanciful library</td>
+<td>29 days ago</td>
+</tr>
+</tbody></table>
+</div><br>So, what I want to explain here is that commit "3b5fb3b" (the last one) isn't live, the above ones won't either. So we got to make sure every new commit from the bottom to the top is correct, that's the meaning of Expo. Why that "Expo" name and not something like "Dev"? No idea, blame kylo.&nbsp;<br><br>The following is the list of changes that you can expect to appear when we update to 1.8:<br><ol><li><i>(For staff - jrs+)</i>- &nbsp;/f &lt;player&gt; (-u) - Freezes a player so they can no longer commit bad things. Unfreezes with -u. Staff members, if you haven't already, read the <a href="https://avicus.net/forums/15349bff0" rel="nofollow" title="Link: https://avicus.net/forums/15349bff0">guidelines and usage here</a>&nbsp;.</li><li>Patch for crosskills/doublekills/however you want to call it - What is that? When you kill a player and the player kills you too. Nasty, ah? Well it's fixed.</li><li>Several block-lag and block-delay fix attempts</li><li><i>(For staff)</i>- &nbsp;For the sake of being able to write a longer reason, /ban /kick and /warn are now aliased into /b, /k, /w respectively (you can still use the old ones though). Also /history is aliased to /h for speed reasons when looking into a user's infractions when about to punish.</li></ol>A bit on the doing and the to-do:<br><ol><li>We are planning on using 1.8 titles on a lot of more things, like when you win, a report comes in, etcetera. Titles are a great way of displaying information for an user and is much better for important info. &nbsp;What is a title javi? <a href="https://www.youtube.com/watch?v=QLlr8ch54to" rel="nofollow" title="Link: https://www.youtube.com/watch?v=QLlr8ch54to">How do you dare!!!</a></li><li>New cool website updates, as the forum-online indicator. <a href="https://twitter.com/AvicusNetwork/status/627093908216897536" rel="nofollow" title="Link: https://twitter.com/AvicusNetwork/status/627093908216897536">Sneak </a><a href="https://twitter.com/AvicusNetwork/status/627093908216897536" rel="nofollow" title="Link: https://twitter.com/AvicusNetwork/status/627093908216897536" class="">peak</a><a href="https://twitter.com/AvicusNetwork/status/627093908216897536" rel="nofollow" title="Link: https://twitter.com/AvicusNetwork/status/627093908216897536"> here!</a></li><li>FFA gamemode, its development was started on kylo's stream.</li><li>Discounts are now possible on the website, along with many other things, the new webpage will come with a 30% discount!</li><li>To Do: New revamped appeal system, shifting away from the forum system that wasn't really the best way of handling appeals and acting on them.</li><li>To Do: Many fixes and addons to the ingame report system (as adding an ID for each) so /takereport on click is finally possible!</li><li>To Do: Enhancements to the combat log reporting system.</li><li><b><a href="http://goo.gl/forms/jj7XTE4xuk" rel="nofollow" title="Link: http://goo.gl/forms/jj7XTE4xuk">SUBMIT YOUR IDEAS!</a></b></li></ol>We hope you like this small (well maybe not that small) heads up, thanks for flying Avicus; harden your seatbelt for the next update, woo hoo!<br><br>Regards!<br><br><i><u>PD: We may have a double perspective&nbsp;</u></i><i class=""><u class="">kylopepe&nbsp;</u></i><i><u class="">livestream</u></i><i><u>&nbsp;soon!!!!</u></i>
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+October 23, 2015 at  2:10 AM UTC
+</small>
+</h2>
+<a href="https://www.youtube.com/watch?v=YxqC0VWtdZI" rel="nofollow">Live streaming now!</a><br><br>I'll update this post with things that are accomplished tonight and/or this weekend.<br><br><br><ul><li><b>Walls fixed &amp; ready for 1.8</b></li><li><b>DTM ready for 1.8</b></li><li><b>1.8 coming :O</b></li></ul>
+<hr>
+<h2>
+<a href='/users/Javipepe.html' style='color: none'>Javipepe</a>
+<small>
+November  8, 2015 at 12:11 PM UTC
+</small>
+</h2>
+Hello!<br><br>Many of you may have seen the new website changes kylo has been working on lately, and now (most of them) are live! In a nutshell these are the changes:<br><ul><li><b>Sales made possible</b>. We now have a 25% sale on all of the shop products until 20 days from now, <a href="http://avicus.net/shop" rel="nofollow" title="Link: http://avicus.net/shop">make sure to get one!</a></li><li>A bit of the <b>main page rework</b>, sexy green ribbon for the sale</li><li><b>Forum online indicator</b>, you will see a green ball next to an online player's post. This indicates that the player is online on the website, not ingame.</li><li><b>Stickied threads' titles are now bolded</b> with the goal of making them more important and making them more "different"</li></ul>Also, the <b>1.8 update</b> is really near and with it, loads of new features and tools. We are hoping to deliver it next weekend, though we'll see if it we can meet this deadline.<br><br>Raise your hypes, and thanks for playing!
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+November 21, 2015 at  3:11 AM UTC
+</small>
+</h2>
+Released <a href="https://avicus.net/forums/5a47edceb" rel="nofollow" title="Link: https://avicus.net/forums/5a47edceb">crates, keys and lotteries update</a>!
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+November 21, 2015 at  5:11 AM UTC
+</small>
+</h2>
+<a href="https://avicus.net/vote" rel="nofollow">Vote for Avicus</a> and get a random reward!
+<hr>
+<h2>
+<a href='/users/Javipepe.html' style='color: none'>Javipepe</a>
+<small>
+December 12, 2015 at 12:12 AM UTC
+</small>
+</h2>
+/stafflist is now arranged per server, in a cleaner way, and with cute arrows, lots of cute arrows!<br><br><img src="http://i.imgur.com/DI8DBQ1.png" title="Image: http://i.imgur.com/DI8DBQ1.png">
+<hr>
+<h2>
+<a href='/users/Javipepe.html' style='color: none'>Javipepe</a>
+<small>
+December 18, 2015 at  8:12 PM UTC
+</small>
+</h2>
+A bit of a bugfix for staff members, /reports now works as it should, with the most recent reports first (a new fancy layout coming soon!), thanks Kylo!<br><br>Also, death messages you are involved in are now bolded, so...<br><img src="http://i.imgur.com/5tJBbo4.png" title="Image: http://i.imgur.com/5tJBbo4.png">
+<hr>
+<h2>
+<a href='/users/Javipepe.html' style='color: none'>Javipepe</a>
+<small>
+April 16, 2016 at 11:04 PM UTC
+</small>
+</h2>
+Hello! Since it's been a while, a small catch-up on the most important features / fixes that have taken place within the last weeks. Enjoy!<b class=""><br><br>Avicus</b><b>:</b><br><ul><li>Freeze method re-done, using entity mounting instead of ultra-high slowness and jump potions.</li><li>Fixed bug that made /reply, most commonly /r not work</li><li>Made stat-tracking (dis)abling way easier with a config option</li><li>When you gain credits, now they appear for a few seconds on top of your inventory (action bar)</li><li>Added option to toggle the visibility of your own trails in-game</li><li>Small tab-list changes, and a few more to come probably very soon. <a href="https://i.imgur.com/cSVnKdd.png" rel="nofollow" title="Link: https://i.imgur.com/cSVnKdd.png">sneak peak</a></li></ul><b>Avicore:</b><br><ul><li>Addition of "/next" command, which will show the map that will play next</li><li>Readded match time to "/match"</li><li>Bettering of the /rotation (or just /rot) and the /map commands, with a cleaner and more user-friendly interface.</li></ul><b>Website:</b><br><ul><li>A few changes and tweaks to internal email handling, with new email provider and new emails for staff team departments / members.</li><li>On the works: new re-designed and hopefully more efficient and elegant shop page <a href="https://i.imgur.com/XdhbKLB.png" rel="nofollow" title="Link: https://i.imgur.com/XdhbKLB.png">sneak peak</a></li></ul><b>Atlas:</b><br><ul><li>Many features being added to Atlas, and bettering (even translated) atlas documentation&nbsp;<a href="https://atlas.avicus.net/" title="Link: https://atlas.avicus.net/">https://atlas.avicus.net/</a><br></li></ul>
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+May  7, 2016 at  5:05 PM UTC
+</small>
+</h2>
+<a href="http://maps.avicus.net" rel="nofollow">maps.avicus.net</a> is back up and running<br><br>And Throwback is too.
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+May 11, 2016 at  6:05 PM UTC
+</small>
+</h2>
+<b>Updated to support Minecraft 1.9.4 </b>(servers must finish their rotation to update).<br><br>I'll be getting back to Atlas development after Friday when I wrap up my last exam. <br><br><u>Here's what has been done since the Atlas announcement:</u><br><ul><li>Lots of maps are being made and many converted from Avicore to Atlas.</li><li>Added item drop, repair, keep, and modification modules.</li><li>Kills and score modules</li><li>Damage modules (prevent types of damage from occurring)</li><li>World modification modules (spawning, gamerules, etc.)</li><li>Looking into CTF support. Some progress was made but scrapped because I'd like to write a better implementation.</li><li><a href="https://atlas.avicus.net/en/modules/localization/" rel="nofollow" title="Link: https://atlas.avicus.net/en/modules/localization/">Localization for maps</a> (woot)!&nbsp;</li><li>More documentation/examples over at <a href="https://atlas.avicus.net/" rel="nofollow" title="Link: https://atlas.avicus.net/">atlas.avicus.net</a>.</li><li>Increase awesome-ness by 150%.</li><li>Fewer bugs.</li></ul><u>What I'm working on now:</u><br><ul><li>FFA support.</li><li>Bug fixing.</li></ul>
+<hr>
+<h2>
+<a href='/users/Posighdun.html' style='color: Gray'>Posighdun</a>
+<small>
+June  9, 2016 at 12:06 AM UTC
+</small>
+</h2>
+<b>Updated to support Minecraft 1.10</b>
+<hr>
+<h2>
+<a href='/users/ALM.html' style='color: #E77400'>ALM</a>
+<small>
+June 15, 2016 at  8:06 PM UTC
+</small>
+</h2>
+<h2>Here's What's Been Happening:</h2><br><b>Web</b><span>:</span><br><ul><li>A few registration bugs have been resolved.</li><li>All of the repositories related to the Atlas update are now on the development page.</li></ul><i>A nice forums update is coming out with the release of Atlas, stay tuned for more details at a later time!</i><br><br><b>Atlas</b><span>:</span><br><ul><li>Started work on the CTF game mode.</li><li>Made it possible to do some really fun things with projectiles.</li><li>Added the ability to give heads in loadouts.</li><li>Added portals</li><li>Added scoreboxes</li><li>Finished up FFA</li><li>Completed a working playtest with NO BUGS!! WOO</li></ul><b>Avicore</b><span>:</span><br><ul><li>Misc. fixes and improvements for tournaments.</li></ul><b>Shout out to the Map Devs!</b><br><span>A lot of work has been done since the last dev log in regards to getting maps ready for the update. The map development team has been working hard to make this update happen. Without them, this update would not be possible.&nbsp;</span><br><br><b></b><span>Expect more updates in the near future.</span><br><span>As always, to stay up to date with the latest developments, check out our&nbsp;</span><a href="https://avicus.net/development/" rel="nofollow">development page</a><span>.</span>
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+June 28, 2016 at  4:06 PM UTC
+</small>
+</h2>
+Translations added to the rules page!<br><br><a href="http://avicus.net/rules/en" rel="nofollow"><img src="http://i.imgur.com/WzLW2gc.png" title="Image: http://i.imgur.com/WzLW2gc.png"></a><br><br>We'll be working on ensuring proper grammar and that each language communicates the same information.<br><br>If you would like to help:&nbsp;<a href="https://github.com/Avicus/Rules" title="Link: https://github.com/Avicus/Rules">https://github.com/Avicus/Rules</a>
+<hr>
+<h2>
+<a href='/users/Javipepe.html' style='color: none'>Javipepe</a>
+<small>
+June 30, 2016 at 12:06 PM UTC
+</small>
+</h2>
+As you may or may not have noticed, a few days ago I added some fancy titles to monument destroying and wool capturing with some cool icons. If you don't know what I'm talking about, have a few screenshots:<br><br><img src="https://i.imgur.com/woAADcG.png" title="Image: https://i.imgur.com/woAADcG.png"><br><img src="https://i.imgur.com/ZWMNsM8.png" title="Image: https://i.imgur.com/ZWMNsM8.png"><br><br>However, I found people that loved them and people that found them annoying; so the most intelligent - and requested - thing to was to add a small toggle to it (will be live on server restart):<br><br><img src="https://i.imgur.com/pcKmhk6.png" title="Image: https://i.imgur.com/pcKmhk6.png"><br><br>Just a small heads up :)
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+July 18, 2016 at  4:07 PM UTC
+</small>
+</h2>
+ALM has added tournament-specific punishments and alerts recently. He has also added significant amounts of documentation to <a href="http://atlas.avicus.net" rel="nofollow" title="Link: http://atlas.avicus.net">atlas.avicus.net</a>. Do check it out if you are interested in Atlas and writing Atlas XML.<br><br>We've been very happy with how Atlas testing has been going. We've only seen a few bugs, the only things that need changing are little additions that Avicore has that Atlas is lacking. Progress!
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+July 22, 2016 at  3:07 PM UTC
+</small>
+</h2>
+Server menu update to accommodate the <a href="https://avicus.net/forums/discussions/82840906b" rel="nofollow" title="Link: https://avicus.net/forums/discussions/82840906b">change in number of servers</a>! It is now a single menu, the colors have changed a bit, and that's it.<br><br><img src="http://i.imgur.com/z4FUgAE.png" title="Image: http://i.imgur.com/z4FUgAE.png">
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+July 22, 2016 at  4:07 PM UTC
+</small>
+</h2>
+<a href="http://maps.avicus.net" rel="nofollow">maps.avicus.net</a> now has Avicore and Atlas maps (YML and XML).
+<hr>
+<h2>
+<a href='/users/ALM.html' style='color: #E77400'>ALM</a>
+<small>
+July 25, 2016 at 12:07 PM UTC
+</small>
+</h2>
+Recent posts have finally returned.
+<hr>
+<h2>
+<a href='/users/ALM.html' style='color: #E77400'>ALM</a>
+<small>
+August  6, 2016 at 12:08 AM UTC
+</small>
+</h2>
+<center><b>A new feature for scrims!<br><br></b></center>You can now define players in the scrim invite/uninvite commands.<br><br>All you have to do is instead of using a team tag, use -p PLAYERNAME<br><br>For example,&nbsp;<br><code>/scrim invite -p ALM</code><br><code>/scrim uninvite -p Fouled</code>
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+September  5, 2016 at  8:09 PM UTC
+</small>
+</h2>
+Atlas update released! But you all know that. Here's some helpful links:<br><br><b>About Atlas game manager:&nbsp;</b><a href="https://avicus.net/forums/discussions/3cf3e9cff">https://avicus.net/forums/discussions/3cf3e9cff</a><br><b>Atlas release thread: </b><a href="https://avicus.net/forums/discussions/857d6f075" title="Link: https://avicus.net/forums/discussions/857d6f075">https://avicus.net/forums/discussions/857d6f075</a><b>&nbsp;</b><br><b>Atlas bug fix log:&nbsp;</b><a href="https://avicus.net/forums/discussions/8b3647326" title="Link: https://avicus.net/forums/discussions/8b3647326">https://avicus.net/forums/discussions/8b3647326</a>
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+September  5, 2016 at  8:09 PM UTC
+</small>
+</h2>
+<ul><li>Spanish translations completed and deployed to the servers.</li><li>Period spectator messages. These yellow notifications alert spectators about other matches they could potentially join, so as to move spectators into new matches!</li></ul>
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+September 14, 2016 at  1:09 AM UTC
+</small>
+</h2>
+We've closed 15-20 issues in the past day or so, fixing bugs and adding features left and right. Among them (see github issues for in depth list):<br><br><ul><li>/ban -t fix</li><li>Web permission fixes (make issues if more exist)</li><li>Kit spawning after death</li><li>Lilypad exploit fix</li><li>Channels/reports now clickable</li><li>Shop confirmation dialog in addition to telling the user of the purchase and price</li><li>Fix wool message spamming players</li><li>Fix piston exploit</li><li>Warns now alert the player properly (titles possibly to come)</li><li>Bold death messages if you are involved</li><li>Website team creation fixed</li><li>Colored bow shots added</li><li>Flags picked up after match end fixed<br></li><li>Kills and deaths are recorded</li><li>Prevent joining while cycling</li><li>Fix multi-block monuments</li></ul><br><b>New XML features, undocumented as of yet:</b><br><ul><li>Randomized chest contents (Sky Wars hype, Walls hype?)</li><li>Map tutorial module</li><li>Destroyable monuments (TNT, lava can destroy destroyable="true" monuments)</li></ul>Right now we are focusing on the remaining issues at <a href="http://www.avicus.net/issues" title="Link: http://www.avicus.net/issues">www.avicus.net/issues</a>, but also we are focusing on improving (new)&nbsp;user experience. We are adding a server tutorial, in addition to map tutorials to explain what Avicus is and such. We also have plans for some nifty gadgets, so stay posted.<br><br>We hope everyone appreciates this format of updates, instead of waiting months for a massive update (like Atlas)!
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+September 15, 2016 at 12:09 AM UTC
+</small>
+</h2>
+Worked on some changes to the server menu. Right now it is not utilized, but for future gamemodes this may be relevant. Server groups, which group together servers of the same gamemode, are represented as a single icon in the server menu. Left click and right click performs different functions.<br><br>This makes it easy to find a match, but still possible to join a specific server, or spectate an ongoing match you desire.<br><br><br><img src="http://i.imgur.com/IwOzpLO.png" title="Image: http://i.imgur.com/IwOzpLO.png">
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+September 15, 2016 at  3:09 AM UTC
+</small>
+</h2>
+Added a new setting: <b>SpectatorView</b> for toggling if you see other spectators as a spectator.<br><br>Added /stats (equivalent to <b>/tracker</b>, but better).
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+September 15, 2016 at  6:09 PM UTC
+</small>
+</h2>
+Implemented a sidebar in the lobby.<br><br><img src="http://i.imgur.com/SHsUTTV.png" title="Image: http://i.imgur.com/SHsUTTV.png"><br><img src="">
+<hr>
+<h2>
+<a href='/users/Javipepe.html' style='color: none'>Javipepe</a>
+<small>
+September 17, 2016 at  3:09 PM UTC
+</small>
+</h2>
+<a href="https://avicus.net/forums/discussions/1a8c2b337" rel="nofollow">Mentioning people on the forums.</a>
+<hr>
+<h2>
+<a href='/users/ALM.html' style='color: #E77400'>ALM</a>
+<small>
+September 18, 2016 at  8:09 PM UTC
+</small>
+</h2>
+Improved development page a bit.<br><br>Added&nbsp;<a href="https://avicus.net/forums/discussions/ead240abd" rel="nofollow" title="Link: https://avicus.net/forums/discussions/ead240abd">Frenzy</a>.
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+September 23, 2016 at  8:09 PM UTC
+</small>
+</h2>
+Some changes made in the past week:<br><ul><li>Team balancing deployed and working (the joining issue has been fixed)</li><li>Teleport and compass perms as spectator (c.c. <img src="https://crafatar.com/avatars/c2a4c847653e482ab62ed7f8b64330cb?helm&amp;size=20" class="m-0"> <a href="/users/ALM.html" style="color: #E77400">ALM</a>)</li><li>Added some miscellaneous sounds to the game (joining a team, death, etc.). More to come!</li><li>Fixed SpectatorView setting</li><li>Added last competitor module</li><li>Added chest randomization module</li><li>Added velocity/push/icarus zones</li><li>More cohesive server menu (no left-click, right-click text if there is only one server)</li><li>Map tutorials</li><li>Server tutorial in the lobby</li></ul>
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+September 25, 2016 at  8:09 PM UTC
+</small>
+</h2>
+Some user experience updates:<br><ul><li>Boss&nbsp;bar starting/cycling messages (<a href="http://i.imgur.com/pb7ZK8Y.png" title="Link: http://i.imgur.com/pb7ZK8Y.png">example 1</a>,&nbsp;<a href="http://i.imgur.com/np4aGW9.png" title="Link: http://i.imgur.com/np4aGW9.png">example 2</a>)</li><li>Title message + ding sound when close to match start (if you are on a team)</li></ul>Fixed bow issues (inventory updates) with compass module. This fixes some funky frenzy glitches.
+<hr>
+<h2>
+<a href='/users/keenanjt.html' style='color: #E77400'>keenanjt</a>
+<small>
+September 29, 2016 at  9:09 PM UTC
+</small>
+</h2>
+Added <b>/t</b> and <b>/g</b> improved commands.<br><br>/t &lt;your message&gt;<br>/g &lt;your message&gt;<br><br>or<br><br>/t: to toggle team chat<br>/g: to toggle global chat
+<hr>
+<h2>
+<a href='/users/Kashike.html' style='color: Gray'>Kashike</a>
+<small>
+January  6, 2017 at  2:01 AM UTC
+</small>
+</h2>
+If you're premium you now have the option of teleporting to other players by clicking on their name, such as friends:<br><img src="https://miserable.ninja/i/MjQ4ODY1.png" title="Image: https://miserable.ninja/i/MjQ4ODY1.png">
+<hr>
+<h2>
+<a href='/users/ALM.html' style='color: #E77400'>ALM</a>
+<small>
+August  7, 2017 at  9:08 PM UTC
+</small>
+</h2>
+This update is large, but it does not contain any visible features as of yet so I am going to post it here.<br><br>First, let me start off by giving you a little history of Atlas. Atlas was first written with one goal in mind, to fit the needs of Avicus in the current state that it was in when development began. This state was purely a completive PVP-oriented environment and thus Atlas was written to only satisfy those needs. This has it's advantages and disadvantages. The advantages are that we are able to handle these sort of games extremely well and are able to write features to cater to these specifically. The disadvantages of this are that we are not really able to write features to better suit and support other game types, such as walls or SkyWars. These game types are currently stuck in Atlas but do not fit in with the rest of the games and are poorly handled in places that expect competitive conditions to be happening as opposed to more simple games such as these.<br><br>This has been a problem since the beginning, and adding new game types over time has become increasingly more difficult and hacky. To help remedy this issue, I have written an external loading system similar to the way Bukkit loads plugins that we now use to write components for Atlas. Right now Atlas is a load of different features that are written to facilitate specific game types and that aren't used outside of these types. With this system, I have extracted out different parts of Atlas (competitive, walls, skywars, generic arcade) and left the core Atlas with just things used across game types (regions, checks, base executors, zones, etc). The nice thing about this new system is that new game types can be coded into an external component and only loaded in on certain servers so that core Atlas does not need to change with each addition.&nbsp;<br><br>Here's a list of the game type sets:<br><ul><li>Competitive - Destroyables, Leakables, Wools, Hills, Flags</li><li>Walls - Any special walls kits, handling of scoreboard and wall removal</li><li>SkyWars - Handling of spawn distribution, special features</li><li>Generic Arcade - General stuff that can be included in all Arcade games like auto team selection and joining mid-game</li></ul><br><br>This system does have one caveat, and it effects some of the maps we currently have in the repository. You cannot combine game type sets in maps anymore. This means that maps such as Walluar or SkyWars maps with hills or flags are no longer possible but the advantages highly outweigh the few negatives.<br><br>New features and games should come of this soon,<br>Austin
+<hr>
+</div>
+</div>
+
+<br>
+<br>
+<br>
+<div class='bottom-nav fixed-bottom p-4' style='background-color: #a1d6d6'>
+<ul class='inline-list reduce-1 m-0'>
+<li>
+This website is an archive of data gathererd by Avicus Network LLC between the years of 2013 and 2017
+<br>
+Copyright Ⓒ 2012-2017 Avicus Network LLC. All Rights Reserved
+<br>
+</li>
+<li>
+<a class='no-decor fg-white fg-white-hover' href='https://discord.gg/4VR84ce'>Discord</a>
+</li>
+<li>
+<a class='no-decor fg-white fg-white-hover' href='https://github.com/Avicus/'>GitHub</a>
+</li>
+<li>
+<a class='no-decor fg-white fg-white-hover' href='https://xml.avicus.net'>XML Documentation</a>
+</li>
+</ul>
+</div>
+<!-- Metro 4 -->
+<script src='https://cdn.metroui.org.ua/v4.4.2/js/metro.min.js'></script>
+</body>
+</html>
