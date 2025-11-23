@@ -1,0 +1,56 @@
+{
+  "type": "object",
+  "description": "Forum discussion",
+  "properties": {
+    "uuid": {
+      "type": "string",
+      "description": "Discussion UUID"
+    },
+    "author": {
+      "type": "string",
+      "description": "Discussion author username"
+    },
+    "title": {
+      "type": "string",
+      "description": "Discussion title"
+    },
+    "created_at": {
+      "type": "integer",
+      "description": "Timestamp of when the discussion was created"
+    },
+    "replies": {
+      "type": "array",
+      "description": "List of replies to this discussion",
+      "items": {
+        "type": "object",
+        "description": "Forum post (discussion or reply)",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "description": "Post ID"
+          },
+          "author": {
+            "type": "string",
+            "description": "Post author username"
+          },
+          "body": {
+            "type": "string",
+            "description": "Post body"
+          },
+          "body_tagged": {
+            "type": "string",
+            "description": "Post body with links to users"
+          },
+          "created_at": {
+            "type": "integer",
+            "description": "Timestamp of when the post was created"
+          },
+          "reply_to": {
+            "type": "integer",
+            "description": "ID of the post this is a reply to (if applicable)"
+          }
+        }
+      }
+    }
+  }
+}

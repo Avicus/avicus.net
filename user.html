@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Avicus Archive</title>
+  <meta name="description" content="The Avicus archive is temporarily offline while we consider future updates." />
+  <meta property="og:title" content="Avicus Archive" />
+  <meta property="og:description" content="The Avicus archive is temporarily offline while we evaluate next steps." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#212121" />
+  <meta name="archive-years" content="2013-2017" />
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="assets/css/main.css" rel="stylesheet" />
+  <link href="assets/css/player.css" rel="stylesheet" />
+  <script src="assets/js/moment.min.js"></script>
+</head>
+<body>
+  <div class="overlay player-overlay z-depth-3">
+    <h1>Avicus Archive</h1>
+
+    <div class="center-align" style="margin-top:20px; display:flex; flex-wrap:wrap; justify-content:center; gap:10px;">
+      <a class="btn discord-btn" href="https://discord.gg/avicus" target="_blank" rel="noopener" style="white-space:nowrap;"><i class="material-icons left">chat</i> Join the Discord</a>
+    </div>
+
+    <div class="row player-info" style="margin-top:20px; margin-left:0; margin-right:0;">
+        <img id="player-avatar" />
+        <div style="display:flex;flex-direction:column;" >
+            <span id="player-name"></span>
+            <div id="player-badges" style="margin-top:1rem;display:flex;"></div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:8px; margin-left:0; margin-right:0;">
+      <div class="col s12 m3" style="min-height:100%">
+        <div class="player-stat-card">
+            <i class="material-icons" aria-hidden="true">timer</i>
+            <span><strong>Time Online</strong></span>
+            <span id="player-playtime" style="color:#c1c1c1"></span>
+        </div>
+      </div>
+      <div class="col s12 m3" style="min-height:100%">
+        <div class="player-stat-card">
+            <i class="material-icons" aria-hidden="true">add_circle</i>
+            <span><strong>Server Joins</strong></span>
+            <span id="player-joins" style="color:#c1c1c1"></span>
+        </div>
+      </div>
+      <div class="col s12 m3" style="min-height:100%">
+        <div class="player-stat-card">
+            <i class="material-icons" aria-hidden="true">calendar_month</i>
+            <span><strong>Joined</strong></span>
+            <span id="player-joined" style="color:#c1c1c1"></span>
+        </div>
+      </div>
+      <div class="col s12 m3" style="min-height:100%">
+        <div class="player-stat-card">
+            <i class="material-icons" aria-hidden="true">star</i>
+            <span><strong>Credits</strong></span>
+            <span id="player-credits" style="color:#c1c1c1"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-panel stats-card blue-grey darken-3 z-depth-1" style="margin-top:16px;color:#ffffff;position:relative;border-radius:8px">
+        <span style="font-size:2.5rem;">Stats</span>
+        <div class="row" style="margin-top:1.5rem;">
+            <div class="player-stat col s6 m3">
+                <span id="player-kills" style="font-size: 1.5rem;"></span>
+                <span style="color:#c1c1c1">Kills</span>
+            </div>
+            <div class="player-stat col s6 m3">
+                <span id="player-deaths" style="font-size: 1.5rem;"></span>
+                <span style="color:#c1c1c1">Deaths</span>
+            </div>
+            <div class="player-stat col s6 m3">
+                <span id="player-pvp-deaths" style="font-size: 1.5rem;"></span>
+                <span style="color:#c1c1c1">PVP Deaths</span>
+            </div>
+            <div class="player-stat col s6 m3">
+                <span id="player-kd" style="font-size: 1.5rem;"></span>
+                <span style="color:#c1c1c1">K/D Ratio</span>
+            </div>
+        </div>
+        <span style="font-size:2.5rem;">Objectives</span>
+        <div class="row" style="margin-top:1.5rem;">
+            <div class="player-stat col s12 m3">
+                <span id="player-monuments" style="font-size: 1.5rem;"></span>
+                <span style="color:#c1c1c1">Monuments Destroyed</span>
+            </div>
+            <div class="player-stat col s12 m3">
+                <span id="player-wools" style="font-size: 1.5rem;"></span>
+                <span style="color:#c1c1c1">Wools Collected</span>
+            </div>
+            <div class="player-stat col s12 m3">
+                <span id="player-leaks" style="font-size: 1.5rem;"></span>
+                <span style="color:#c1c1c1">Cores Leaked</span>
+            </div>
+            <div class="player-stat col s12 m3">
+                <span id="player-hills" style="font-size: 1.5rem;"></span>
+                <span style="color:#c1c1c1">Hills Captured</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="card-panel stats-card grey darken-3 z-depth-1" style="margin-top:16px;color:#ffffff;position:relative;border-radius:8px">
+        <span style="font-size:2.5rem;">About</span>
+        <div class="row" style="margin-top:1.5rem;">
+            <div id="player-about"></div>
+        </div>
+    </div>
+
+    <div class="card-panel stats-card blue-grey darken-3 z-depth-1" style="margin-top:16px;color:#ffffff;position:relative;border-radius:8px">
+        <span style="font-size:2.5rem;">Punishments</span>
+        <div class="row" style="margin-top:1.5rem;">
+            <div class="player-stat col s12 m6">
+                <span id="player-punishments" style="font-size: 1.5rem;"></span>
+                <span style="color:#c1c1c1">Punishments Received</span>
+            </div>
+            <div class="player-stat col s12 m6">
+                <span id="player-punishments-given" style="font-size: 1.5rem;"></span>
+                <span style="color:#c1c1c1">Punishments Issued</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top:8px; margin-left:0; margin-right:0;">
+      <div class="col s12 m6">
+        <div class="player-card">
+            <div style="display:flex;align-items:center;"><i class="material-icons" aria-hidden="true">person</i>&nbsp;&nbsp;Friends</div>
+            <span id="player-friends" style="color:#c1c1c1"></span>
+        </div>
+      </div>
+      <div class="col s12 m3">
+        <div class="player-card">
+            <div style="display:flex;align-items:center;"><i class="material-icons" aria-hidden="true">people</i>&nbsp;&nbsp;Teams</div>
+            <span id="player-teams" style="color:#c1c1c1"></span>
+        </div>
+      </div>
+      <div class="col s12 m3">
+        <div class="player-card">
+            <div style="display:flex;align-items:center;"><i class="material-icons" aria-hidden="true">favorite_border</i>&nbsp;&nbsp;Interests</div>
+            <span id="player-interests" style="color:#c1c1c1"></span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="years"></span> Avicus Network • <a href="https://github.com/Avicus" target="_blank" rel="noopener">GitHub</a> • <a href="https://discord.gg/avicus" target="_blank" rel="noopener">Discord</a>
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./src/years.js"></script>
+  <script src="./src/user.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "type": "array",
+  "description": "List of forum categories",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer",
+        "description": "Category ID"
+      },
+      "name": {
+        "type": "string",
+        "description": "Category name"
+      },
+      "forum_name": {
+        "type": "string",
+        "description": "Name of the forum this category belongs to"
+      },
+      "thread_count": {
+        "type": "integer",
+        "description": "Number of threads in this category"
+      },
+      "first_thread_date": {
+        "type": "integer",
+        "description": "Timestamp of the first thread created in this category"
+      },
+      "last_thread_date": {
+        "type": "integer",
+        "description": "Timestamp of the most recent thread created in this category"
+      }
+    }
+  }
+}
