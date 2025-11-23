@@ -1,0 +1,161 @@
+html, body { 
+    margin: 0; 
+    padding: 0; 
+    width: 100%; 
+    overflow-x: hidden; 
+}
+
+body {
+    background: url('../img/pattern.png') center center fixed;
+    background-size: 1500px 1500px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    backdrop-filter: brightness(0.45) saturate(1.1);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.overlay { 
+    background: rgba(18, 18, 18, 0.9); 
+    border-radius: 16px; 
+    padding: 40px; 
+    max-width: 820px; 
+    width: 95%; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5); 
+    overflow: hidden;
+    z-index: 1; 
+}
+
+h1 { 
+    font-weight: 700;
+    margin-bottom: 10px; 
+    color: #ffffff; 
+    text-align: center; 
+}
+
+.chip { 
+    background-color: #d32f2f; 
+    color: #fff; 
+    font-weight: 600; 
+    display: inline-flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+p, .collection .collection-item span, footer, .collection .collection-item { 
+    color: #f5f5f5 !important; 
+}
+
+.collection .collection-item { 
+    background-color: #263238 !important; 
+    border: none !important; 
+}
+
+a { 
+    color: #80cbc4; 
+}
+
+.discord-btn { 
+    background-color:#5865F2 !important; 
+    color:#fff !important; 
+    font-weight:700; 
+    letter-spacing:.2px; 
+}
+
+.stat { 
+    display:flex; 
+    align-items:center; 
+    gap:10px; 
+    padding:12px 16px; 
+    border-radius:12px; 
+    background:#1e272b; 
+    flex-wrap: wrap; 
+}
+
+.stat strong { 
+    font-size:1.15rem; 
+    color:#fff; 
+}
+
+.stat small { 
+    color:#cfd8dc; 
+    display:block; 
+    line-height:1.2; 
+}
+
+footer { 
+    margin-top: 20px; 
+    text-align: center; 
+    color: #e0e0e0; 
+}
+
+footer a { 
+    color: #80cbc4; 
+}
+
+.unofficial-badge { 
+    background-color:#ff9800; 
+    color:#000; 
+    font-weight:700; 
+    border-radius:8px; 
+    padding:4px 10px; 
+    margin-left:10px; 
+    font-size:.8rem; 
+}
+
+.floating-quote { 
+    position:absolute; 
+    width:260px; 
+    background:rgba(18,18,18,0.85); 
+    border:1px solid #3a4448; 
+    border-radius:12px; 
+    padding:10px 14px; 
+    box-shadow:0 6px 16px rgba(0,0,0,0.4); 
+    font-style:italic; 
+    color:#cfd8dc; 
+    text-align:center; 
+}
+
+.quote-header { 
+    font-weight:700; 
+    font-size:0.85rem; 
+    text-transform:uppercase; 
+    color:#80cbc4; 
+    margin-bottom:4px; 
+    letter-spacing:0.8px; 
+}
+
+#left-quote { 
+    left:8%; 
+    top:18%; 
+}
+
+#right-quote { 
+    right:8%; 
+    top:18%; 
+}
+
+.fade { 
+    animation: fadeSwap .6s ease; 
+}
+
+@keyframes fadeSwap { 
+    from { 
+        opacity:.2; 
+        transform: translateY(4px);
+    } 
+
+    to { 
+        opacity:1; 
+        transform:none; 
+    } 
+}
+
+@media (max-width: 900px) {
+    #left-quote, #right-quote { 
+        display:none; 
+    }
+}

@@ -1,0 +1,36 @@
+{
+  "type": "object",
+  "description": "Forum category with list of discussions",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Category name"
+    },
+    "discussions": {
+      "type": "array",
+      "description": "List of discussions in this category",
+      "items": {
+        "type": "object",
+        "description": "Link to a discussion",
+        "properties": {
+          "uuid": {
+            "type": "string",
+            "description": "Discussion UUID"
+          },
+          "author": {
+            "type": "string",
+            "description": "Discussion author username"
+          },
+          "title": {
+            "type": "string",
+            "description": "Discussion title"
+          },
+          "created_at": {
+            "type": "integer",
+            "description": "Timestamp of when the discussion was created"
+          }
+        }
+      }
+    }
+  }
+}

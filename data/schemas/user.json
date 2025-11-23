@@ -1,0 +1,115 @@
+{
+  "type": "object",
+  "description": "A user profile",
+  "properties": {
+    "uuid": {
+      "type": "string",
+      "description": "User UUID"
+    },
+    "username": {
+      "type": "string",
+      "description": "Username"
+    },
+    "staff": {
+      "type": "boolean",
+      "description": "Whether the user is staff"
+    },
+    "color": {
+      "type": "string",
+      "description": "HTML color code of the user's highest priority rank"
+    },
+    "badges": {
+      "type": "array",
+      "description": "List of badges for the user's currecntly active ranks",
+      "items": {
+        "type": "object",
+        "properties": {
+          "color": {
+            "type": "string",
+            "description": "Badge background color"
+          },
+          "text_color": {
+            "type": "string",
+            "description": "Badge text color"
+          },
+          "text": {
+            "type": "string",
+            "description": "Badge text"
+          }
+        }
+      }
+    },
+    "total_kills": {
+      "type": "integer",
+      "description": "Total number of kills by the user"
+    },
+    "total_deaths": {
+      "type": "integer",
+      "description": "Total number of deaths of the user"
+    },
+    "total_pvp_deaths": {
+      "type": "integer",
+      "description": "Total number of PvP deaths of the user (excluding deaths from non-player causes)"
+    },
+    "credits": {
+      "type": "integer",
+      "description": "Total number of credits the user has"
+    },
+    "time_online": {
+      "type": "integer",
+      "description": "Total time online in seconds"
+    },
+    "joins": {
+      "type": "integer",
+      "description": "Total number of network joins"
+    },
+    "created_at": {
+      "type": "integer",
+      "description": "Timestamp of when the user created their account"
+    },
+    "last_online": {
+      "type": "integer",
+      "description": "Timestamp of when the user was last online. For older users, this is their creation date"
+    },
+    "objective_data": {
+      "type": "object",
+      "description": "Mapping of objective names to counts completed"
+    },
+    "friends": {
+      "type": "array",
+      "description": "List of usernames of the user's friends",
+      "items": {
+        "type": "string"
+      }
+    },
+    "about": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "User's about me section (HTML)"
+    },
+    "interests": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "User's interests"
+    },
+    "punishments_received": {
+      "type": "integer",
+      "description": "Total number of punishments received by the user"
+    },
+    "punishments_issued": {
+      "type": "integer",
+      "description": "Total number of punishments issued by the user"
+    },
+    "teams": {
+      "type": "array",
+      "description": "List of teams the user is a member of",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
