@@ -32,15 +32,15 @@ function setUserProfileData(data) {
     setHtmlElementAttribute('player-punishments', 'innerText', data.punishments_received);
     setHtmlElementAttribute('player-punishments-given', 'innerText', data.punishments_issued);
 
-    setHtmlElementAttribute('player-monuments', 'innerText', data.objective_data.Monument);
-    setHtmlElementAttribute('player-wools', 'innerText', data.objective_data.Wool);
-    setHtmlElementAttribute('player-leaks', 'innerText', data.objective_data.Leakable);
-    setHtmlElementAttribute('player-hills', 'innerText', data.objective_data.Hill);
+    setHtmlElementAttribute('player-monuments', 'innerText', data.objective_data.Monument ?? 0);
+    setHtmlElementAttribute('player-wools', 'innerText', data.objective_data.Wool ?? 0);
+    setHtmlElementAttribute('player-leaks', 'innerText', data.objective_data.Leakable ?? 0);
+    setHtmlElementAttribute('player-hills', 'innerText', data.objective_data.Hill ?? 0);
 
     setHtmlElementAttribute('player-about', 'innerHTML', (data.about ?? 'Nothing here'));
 
     setHtmlElementAttribute('player-friends', 'innerText', data.friends.join(', '));
-    setHtmlElementAttribute('player-interests', 'innerText', data.interests);
+    setHtmlElementAttribute('player-interests', 'innerText', data.interests || 'No interests');
     setHtmlElementAttribute('player-teams', 'innerText', data.teams.join(', ') || 'No teams joined');
 
     normalizePlayerStatCardsHeight();
